@@ -1,0 +1,1117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image:url(/assets/img/FONDOSILUETA.jpg);          /*Fondo negro*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    line-height: 1.5; 
+}
+
+
+
+    /* Header */
+        header {
+            width: 100%;
+            background-color: #000;
+            border-bottom: 2px solid #960606;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 8px;
+        }
+        .logo{
+            text-align: center;
+            font-size: 2rem;
+            letter-spacing: 2px;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 0.95rem;
+        }
+        nav ul li a:hover {
+            color: #f44336;
+        }
+
+        .submenu{
+            display: none;
+            flex-direction: column;
+        }
+#menu-toggle,
+    .menu-icon {
+        display: none;
+    }
+
+    .menu-icon {
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: white;
+    }
+
+
+        /* Main Section */
+        main {
+            max-width: 1200px;
+            margin: 3rem auto;
+            display: flex;
+            gap: 3rem;
+            align-items: center;
+            padding: 0 1rem;
+            
+        }
+        h1{
+            display: flex;
+            color: white ;
+            justify-content: center;
+            width:100% ;
+        }
+        /* Texto próximo gran premio */
+        .info {
+            flex: 1;
+        }
+        .info h2 {
+            color: #bd0a0a;
+            font-size: 2rem;
+            font-weight: 900;
+            text-decoration: underline;
+            margin-bottom: 1.5rem;
+        }
+        .info h3 {
+            color: #fff;
+            font-size: 1.4rem;
+            font-weight: 700;
+            border-left: 4px solid #bd0a0a;
+            padding-left: 0.6rem;
+            margin-bottom: 1rem;
+        }
+        .info p {
+            font-size: 0.9rem;
+            color: #d0d0d0;
+            margin-bottom: 1.5rem;
+        }
+        .btn-info {
+            background-color: #e30613;
+            border: none;
+            padding: 0.7rem 1.3rem;
+            border-radius: 5px;
+            color: #fff;
+            font-weight: 600;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            transition: background-color 0.3s ease;
+        }
+        .btn-info:hover {
+            background-color: #a3050d;
+        }
+        /* Imagen circuito */
+        .circuit-img {
+            flex: 1;
+            max-width: 600px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px 3px #b21414;
+        }
+        .circuit-img img {
+            width: 100%;
+            border-radius: 15px;
+            display: block;
+        }
+
+        main {
+            position: relative;
+            z-index: 1;
+        }
+
+        #menu-toggle{
+            display: none;
+        }
+
+/* ---------- VISTA MOBILE ---------- */
+@media (max-width: 480px) {
+
+  /* Header */
+    header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 15px;
+    position: relative;
+    }
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: #111;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 100%;
+    border-top: 2px solid rgb(20, 20, 20);
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  #menu-toggle:checked + .menu-icon + .navbar .menu {
+    display: flex;
+  }
+    nav{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        background-color: #111;
+        text-align: center;
+        border-top: 2px solid  #444;
+        padding: 15px 0;
+        z-index: 10;
+    }
+    #menu-toggle:checked + .menu-icon + nav{
+        display: flex;
+    }
+
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    nav ul li a{
+        color: white;
+        font-size: 15px;
+        text-decoration: none;
+    }
+    nav ul li a:hover{
+        color: #f44336;
+    }
+    .menu-icon {
+        display: block;
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
+        user-select: none;
+    }
+
+
+
+/* INDEX */
+    main{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 15px;
+        width: 100%;
+    }
+    main h2{
+        width: 100%;
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    main img{
+        width: 90%;
+        max-width: 390px;
+        max-height: 350px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+    main h3{
+        font-size: 17px;
+        margin-bottom: 7px;
+    }
+    main p{
+        font-size: 15px;
+        margin-bottom: 15px;
+        padding: 0 7px;
+    }
+    main button .btn-info{
+        display: block;
+        margin: 0 auto;
+        font-size: 15px;
+    }
+/* ESCUDERIAS */
+
+    .grid-escuderias{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10,); 
+    gap: 18px;
+    justify-items: center;
+    padding: 10px 12px;
+    box-sizing: border-box;
+    }
+    .grid-item-piloto-1,
+    .grid-item-piloto-2{
+        display: none;
+    }
+    .grid-info-auto{
+        display: block;
+        grid-column: 1 / -1;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 420px;
+        margin: 0 auto;
+        padding: 18px;
+        box-sizing: border-box;
+    }
+    .grid-info-auto h2{
+        text-align: center;
+        font-size: 35px;
+    }
+    .grid-info-auto p{
+        text-align: center;
+        font-size: 18px;
+    }
+
+
+
+
+
+
+  /* Grilla: 1 columna, imagen arriba */
+    .grid-circuitos {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .grid-item-circuitos {
+        flex-direction: column;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .grid-item-circuitos img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .grid-item-circuitos .info {
+    text-align: center;
+    }
+    .grid-item-circuitos ul{
+        text-align: center;
+        justify-items: center;
+    }
+}
+
+
+
+.menu-horizontal li:hover .menu-vertical{
+    display: block; 
+    list-style: none;
+
+}
+
+.menu-vertical li:hover{
+    background-color: rgba(179, 179, 179, 0.664);
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+}
+
+
+.menu-vertical li a{
+    display: flex;
+    color: rgb(255, 255, 255);
+    padding: 15px 15px 15px 15px;
+    text-align: center;
+    list-style: none;
+
+}
+
+
+.footer{
+    border-top: 2px solid red;
+}
+
+.footer-links {                                     /*LINKS DEL FOOTER*/
+    color:rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    padding-left: 3px;
+    text-decoration: underline;
+}
+
+.grid-pilotos{
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    grid-template-rows: repeat(20,500px);
+    align-content: center;
+    justify-content: center
+}
+
+
+.grid-item{
+    background-color: rgba(0, 0, 0, 0.4048);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    border: solid 3px rgb(0, 0, 0);
+}
+
+#grid-1{
+    background-image: url(/assets/img/LandoNorris\ _3.jpeg);
+}#grid-2{
+    background-image: url(/assets/img/OscarPiastri.jpeg);
+}#grid-3{
+    background-image: url(/assets/img/MaxVerstappen.jpeg);
+}#grid-4{
+    background-image: url(/assets/img/GeorgeRussell.jpeg);
+}#grid-5{
+    background-image: url(/assets/img/CharlesLeclerc.jpeg);
+}#grid-6{
+    background-image: url(/assets/img/LewisHamilton.jpeg);
+}#grid-7{
+    background-image: url(/assets/img/KimiAntonelli.jpeg);
+}#grid-8{
+    background-image: url(/assets/img/AlexanderAlbon.jpeg);
+}#grid-9{
+    background-image: url(/assets/img/NicoHulkenberg.jpeg);
+}#grid-10{
+    background-image: url(/assets/img/IsackHadjar.jpeg);
+}#grid-11{
+    background-image: url(/assets/img/CarlosSainz.jpeg);
+}#grid-12{
+    background-image: url(/assets/img/FernandoAlonso.jpeg);
+}#grid-13{
+    background-image: url(/assets/img/OliverBearman.jpeg);
+}#grid-14{
+    background-image: url(/assets/img/LanceStroll.jpeg);
+}#grid-15{
+    background-image: url(/assets/img/LiamLawson.jpeg);
+}#grid-16{
+    background-image: url(/assets/img/EstebanOcon.jpeg);
+}#grid-17{
+    background-image: url(/assets/img/YukiTsunoda.jpeg);
+}#grid-18{
+    background-image: url(/assets/img/PierreGasly.jpeg);
+}#grid-19{
+    background-image: url(/assets/img/GabrielBortoleto.jpeg);
+}#grid-20{
+    background-image: url(/assets/img/FrancoColapinto.jpeg);
+}
+
+.grid-pilotos h2{
+    font-size: 42px;
+    text-decoration: overline;
+}
+.grid-pilotos ul{
+    margin-top: 10px;
+    list-style: none;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.316);
+    position: relative;
+    padding: 15px;
+
+}
+
+.grid-item-info-1{
+    background-image: url(/assets/img/mclaren-mini.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+}.grid-item-info-2{
+    background-image: url(/assets/img/mclaren-mini.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+}.grid-item-info-3{
+    background-image: url(/assets/img/red-bull-mini.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+}.grid-item-info-4{
+    background-image: url(/assets/img/mercedes-minii.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+}.grid-item-info-5{
+    background-image: url(/assets/img/ferrari-mini.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+}.grid-item-info-6{
+    background-image: url(/assets/img/ferrari-mini.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+}.grid-item-info-7{
+    background-image: url(/assets/img/mercedes-minii.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+}.grid-item-info-8{
+    background-image: url(/assets/img/williams-mini-.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+}.grid-item-info-9{
+    background-image: url(/assets/img/stake-mini.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+}.grid-item-info-10{
+    background-image: url(/assets/img/red-bull-visa-mini.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+}.grid-item-info-11{
+    background-image: url(/assets/img/williams-mini-.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+}.grid-item-info-12{
+    background-image: url(/assets/img/aston-martin-mini.jpeg);
+    background-size: cover; 
+    background-position: center;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+}.grid-item-info-13{
+    background-image: url(/assets/img/haas-mini.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+}.grid-item-info-14{
+    background-image: url(/assets/img/aston-martin-mini.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+}.grid-item-info-15{
+    background-image: url(/assets/img/red-bull-visa-mini.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+}.grid-item-info-16{
+    background-image: url(/assets/img/haas-mini.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+}.grid-item-info-17{
+    background-image: url(/assets/img/red-bull-mini.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+}.grid-item-info-18{
+    background-image: url(/assets/img/alpine-mini.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+}.grid-item-info-19{
+    background-image: url(/assets/img/stake-mini.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+}.grid-item-info-20{
+    background-image: url(/assets/img/alpine-mini.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+}
+
+
+.grid-escuderias{
+    display: grid;
+    grid-template-columns: repeat(3, 500px);
+    grid-template-rows: repeat(10,500px);
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+.grid-item-piloto-1{
+    background-color: rgba(0, 0, 0, 0.4048);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    border: solid 3px black;
+}
+
+
+.grid-info-auto p{
+    display: block;
+    background-color: rgba(65, 58, 58, 0.601);
+    border-radius: 10px;
+    margin-top: 32%;
+    color: white;
+    font-size: 20px;
+    
+}
+.grid-info-auto h2{
+    font-size: 45px;
+    text-decoration: overline;
+}
+.grid-item-piloto-2{
+    border-radius: 10px;
+    margin: 10px;   
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+#grid-escuderias-1{
+        background-image: url(/assets/img/OscarPiastri.jpeg );
+}
+#grid-escuderias-2{
+    background-image: url(/assets/img/LandoNorris\ _3.jpeg);
+}
+#grid-escuderias-3{
+        background-image: url(/assets/img/MaxVerstappen.jpeg );
+}
+#grid-escuderias-4{
+    background-image: url(/assets/img/YukiTsunoda.jpeg)
+}
+#grid-escuderias-5{
+        background-image: url(/assets/img/CharlesLeclerc.jpeg );
+}
+#grid-escuderias-6{
+    background-image: url(/assets/img/LewisHamilton.jpeg)
+}
+#grid-escuderias-7{
+        background-image: url(/assets/img/GeorgeRussell.jpeg );
+}
+#grid-escuderias-8{
+    background-image: url(/assets/img/KimiAntonelli.jpeg);
+}
+#grid-escuderias-9{
+        background-image: url(/assets/img/FernandoAlonso.jpeg );
+}
+#grid-escuderias-10{
+    background-image: url(/assets/img/LanceStroll.jpeg);
+}
+#grid-escuderias-11{
+        background-image: url(/assets/img/CarlosSainz.jpeg );
+}
+#grid-escuderias-12{
+    background-image: url(/assets/img/AlexanderAlbon.jpeg);
+}
+#grid-escuderias-13{
+        background-image: url(/assets/img/LiamLawson.jpeg );
+}
+#grid-escuderias-14{
+    background-image: url(/assets/img/IsackHadjar.jpeg);
+}
+#grid-escuderias-15{
+        background-image: url(/assets/img/PierreGasly.jpeg );
+}
+#grid-escuderias-16{
+    background-image: url(/assets/img/FrancoColapinto.jpeg);
+}
+#grid-escuderias-17{
+        background-image: url(/assets/img/NicoHulkenberg.jpeg );
+}
+#grid-escuderias-18{
+    background-image: url(/assets/img/GabrielBortoleto.jpeg);
+}#grid-escuderias-19{
+        background-image: url(/assets/img/EstebanOcon.jpeg );
+}
+#grid-escuderias-20{
+    background-image: url(/assets/img/OliverBearman.jpeg);
+}
+
+.grid-info-auto{
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    color: rgba(255, 255, 255, 0.63);
+    background-color: rgba(59, 54, 54, 0.377)
+}
+#auto-1{
+    background-image: url(/assets/img/2025mclarencarright-removebg-preview.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#auto-1 h2{
+    color: orange;
+    font-size: 50px;
+    padding-bottom: 60px;
+}
+#auto-2{
+    background-image: url(/assets/img/2025redbullracingcarright-removebg-preview.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#auto-2 h2{
+    color: rgb(13, 13, 122);
+    padding-bottom: 60px;
+    
+}
+#auto-3{
+    background-image: url(/assets/img/2025ferraricarright-removebg-preview.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#auto-3 h2{
+    color: red;
+    padding-bottom: 60px;
+}
+#auto-4{
+    background-image: url(/assets/img/2025mercedescarright-removebg-preview.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#auto-4 h2{
+    color: rgb(5, 227, 243);
+    font-size: 40px;
+    padding-bottom: 80px;
+}
+#auto-5{
+    background-image: url(/assets/img/2025astonmartincarright-removebg-preview.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#auto-5 h2{
+    color: rgb(5, 94, 52);
+    font-size: 40px;
+    padding-bottom: 80px;
+}
+#auto-6{
+    background-image: url(/assets/img/2025williamscarright-removebg-preview.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#auto-6 h2{
+    color: blue;
+    padding-bottom: 60px;
+}
+#auto-7{
+    background-image: url(/assets/img/2025racingbullscarright-removebg-preview.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#auto-7 h2{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    padding-bottom: 80px;
+}
+#auto-8{
+    background-image: url(/assets/img/2025alpinecarright-removebg-preview\ \(1\).png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#auto-8 h2{
+    color: pink;
+    padding-bottom: 60px;
+}
+#auto-9{
+    background-image: url(/assets/img/2025kicksaubercarright-removebg-preview.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#auto-9 h2{
+    color: rgb(63, 250, 5);
+    padding-bottom: 60px;
+}
+#auto-10{
+    background-image: url(/assets/img/2025haascarright-removebg-preview.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#auto-10 h2{
+    color: white;
+    padding-bottom: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+        main {
+            max-width: 1200px;
+            margin: 3rem auto;
+            display: flex;
+            gap: 3rem;
+            align-items: center;
+            padding: 0 1rem; 
+            background-color: rgba(47, 44, 44, 0.465);
+            border-radius: 15px;
+        }
+
+                    /* Texto próximo gran premio */
+        .info {
+            flex: 1;
+        }
+        .info h2 {
+            color: #bd0a0a;
+            font-size: 2rem;
+            font-weight: 900;
+            text-decoration: underline;
+            margin-bottom: 1.5rem;
+        }
+
+        .info h3{
+            color: #fff;
+            font-size: 1.4rem;
+            font-weight: 700;
+            border-left: 4px solid #bd0a0a;
+            padding-left: 0.6rem;
+            margin-bottom: 1rem;
+        }
+                .info p {
+            font-size: 0.9rem;
+            color: #d0d0d0;
+            margin-bottom: 1.5rem;
+        }
+        
+
+        .btn-info {
+            background-color: #e30613;
+            border: none;
+            padding: 0.7rem 1.3rem;
+            border-radius: 5px;
+            color: #fff;
+            font-weight: 600;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            transition: background-color 0.3s ease;
+        }
+        .btn-info:hover {
+            background-color: #a3050d;
+        }
+        /* Imagen circuito */
+        .circuit-img {
+            flex: 1;
+            max-width: 600px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px 3px #b21414;
+        }
+        .circuit-img img {
+            width: 100%;
+            border-radius: 15px;
+            display: block;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contenedor-1 {
+    padding: 60px 10%;
+    background-color: rgba(46, 44, 44, 0.479);
+}
+
+/* Título principal */
+.contenedor-1 h1 {
+    text-align: center;
+    font-size: 45px;
+    letter-spacing: 2px;
+    color: #e10600;
+}
+
+.contenido-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+    margin: 35px;
+}
+
+/* ---------- TEXTO ---------- */
+.texto-contenedor-1 h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 15px;
+    border-left: 4px solid #e10600;
+    padding-left: 10px;
+}
+
+.info-contenedor-1 p {
+    font-size: 1rem;
+    color: #ccc;
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+/* Botón */
+.boton-mas-info {
+    background-color: #e10600;
+    border: none;
+    padding: 12px 25px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 8px;
+    letter-spacing: 1px;
+
+}
+
+.boton-mas-info:hover {
+    background-color: #fff;
+    color: #e10600;
+
+}
+
+/* ---------- IMAGEN ---------- */
+.img-circuito-monaco {
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.curva {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(225, 6, 0, 0.5);
+}
+
+#menu-toggle,
+.menu-icon {
+  display: none;
+}
+
+    .menu-icon {
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: white;
+    }
+
+/* ---------- GRID CIRCUITOS ---------- */
+    .grid-circuitos {
+        width: 90%;
+        margin: 25px auto;
+        display: grid;
+        grid-template-columns:  1fr;
+        gap: 25px;
+    }
+
+    .grid-item-circuitos {
+        display: flex;
+        grid-template-columns:  1fr 1fr;
+        flex-direction:column;
+        width: 100%;
+        align-items: center;
+        background-color: rgba(27, 24, 24, 0.45);
+        border: 1px solid red;
+        border-radius: 15px;
+        padding: 10px;
+        box-shadow: 0 0 5px red;
+    
+    }
+
+    .grid-item-circuitos img {
+    width: 45%;
+    margin-bottom: 0;
+    border-radius: 10px;
+}
+
+.grid-item-circuitos .info {
+    width: 100%;
+    text-align: left;
+    }
+
+.grid-item-circuitos h2 {
+    text-align: left;
+    margin-bottom: 5px;
+    color: white;
+    text-decoration: underline;
+
+}
+
+.grid-item-circuitos ul {
+    list-style: none;
+
+}
+
+.grid-item-circuitos ul li {
+    margin-bottom: 5px;
+    color: white;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid red;
+}
+
+footer a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+#grid-circuitos-1{
+    background-image: url(/assets/img/Australia_Circuit-removebg-preview.png);
+    background-position: center;
+}#grid-circuitos-2{
+    background-image: url(/assets/img/China_Circuit-removebg-preview.png);
+    background-position: center;
+}#grid-circuitos-3{
+    background-image: url(/assets/img/Japan_Circuit-removebg-preview.png);
+    background-position: center;
+}#grid-circuitos-4{
+    background-image: url(/assets/img/Bahrain_Circuit_1-removebg-preview.png);
+    background-position: center;
+}#grid-circuitos-5{
+    background-image: url(/assets/img/Saudi_Arabia_Circuit_1-removebg-preview.png);
+    background-position: center;
+}#grid-circuitos-6{
+    background-image: url(/assets/img/Miami_Circuit_11zon.png);
+    background-position: center;
+}#grid-circuitos-7{
+    background-image: url(/assets/img/Emilia_Romagna_Circuit.png);
+    background-position: center;
+}#grid-circuitos-8{
+    background-image: url(/assets/img/Monaco_Circuit.png);
+    background-position: center;
+}#grid-circuitos-9{
+    background-image: url(/assets/img/Spain_Circuit.png);
+    background-position: center;
+}#grid-circuitos-10{
+    background-image: url(/assets/img/Canada_Circuit.png);
+    background-position: center;
+}#grid-circuitos-11{
+    background-image: url(/assets/img/Austria_Circuit.png);
+    background-position: center;
+}#grid-circuitos-12{
+    background-image: url(/assets/img/Great_Britain_Circuit.png);
+    background-position: center;
+}#grid-circuitos-13{
+    background-image: url(/assets/img/Belgium_Circuit.png);
+    background-position: center;
+}#grid-circuitos-14{
+    background-image: url(/assets/img/Hungary_Circuit.png);
+    background-position: center;
+}#grid-circuitos-15{
+    background-image: url(/assets/img/Netherlands_Circuit.png);
+    background-position: center;
+}#grid-circuitos-16{
+    background-image: url(/assets/img/Italy_Circuit.png);
+    background-position: center;
+}#grid-circuitos-17{
+    background-image: url(/assets/img/Baku_Circuit.png);
+    background-position: center;
+}#grid-circuitos-18{
+    background-image: url(/assets/img/Singapore_Circuit.png);
+    background-position: center;
+}#grid-circuitos-19{
+    background-image: url(/assets/img/USA_Circuit.png);
+    background-position: center;
+}#grid-circuitos-20{
+    background-image: url(/assets/img/Mexico_Circuit.png);
+    background-position: center;
+}#grid-circuitos-21{
+    background-image: url(/assets/img/Brazil_Circuit.png);
+    background-position: center;
+}#grid-circuitos-22{
+    background-image: url(/assets/img/Las_Vegas_Circuit.png);
+    background-position: center;
+}#grid-circuitos-23{
+    background-image: url(/assets/img/Qatar_Circuit.png);
+    background-position: center;
+}#grid-circuitos-24{
+    background-image: url(/assets/img/Abu_Dhabi_Circuit.png);
+    background-position: center;
+}
