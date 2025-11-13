@@ -5,8 +5,10 @@
 }
 
 
+                    /*ESTILOS GENERALES*/
+
 body {
-    background-image:url(/assets/img/FONDOSILUETA.jpg);          /*Fondo negro*/
+    background-image:url(/assets/img/FONDOSILUETA.jpg);        
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -17,347 +19,142 @@ body {
     font-style: normal;
     line-height: 1.5; 
 }
-
-
-
-    /* Header */
-        header {
-            width: 100%;
-            background-color: #000;
-            border-bottom: 2px solid #960606;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 8px;
-        }
-        .logo{
-            text-align: center;
-            font-size: 2rem;
-            letter-spacing: 2px;
-            color: rgb(255, 255, 255);
-            font-weight: bold;
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 25px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: 400;
-            font-size: 0.95rem;
-        }
-        nav ul li a:hover {
-            color: #f44336;
-        }
-
-        .submenu{
-            display: none;
-            flex-direction: column;
-        }
-#menu-toggle,
-    .menu-icon {
-        display: none;
-    }
-
-    .menu-icon {
-        font-size: 1.8rem;
-        cursor: pointer;
-        color: white;
-    }
-
-
-        /* Main Section */
-        main {
-            max-width: 1200px;
-            margin: 3rem auto;
-            display: flex;
-            gap: 3rem;
-            align-items: center;
-            padding: 0 1rem;
-            
-        }
-        h1{
-            display: flex;
-            color: white ;
-            justify-content: center;
-            width:100% ;
-        }
-        /* Texto próximo gran premio */
-        .info {
-            flex: 1;
-        }
-        .info h2 {
-            color: #bd0a0a;
-            font-size: 2rem;
-            font-weight: 900;
-            text-decoration: underline;
-            margin-bottom: 1.5rem;
-        }
-        .info h3 {
-            color: #fff;
-            font-size: 1.4rem;
-            font-weight: 700;
-            border-left: 4px solid #bd0a0a;
-            padding-left: 0.6rem;
-            margin-bottom: 1rem;
-        }
-        .info p {
-            font-size: 0.9rem;
-            color: #d0d0d0;
-            margin-bottom: 1.5rem;
-        }
-        .btn-info {
-            background-color: #e30613;
-            border: none;
-            padding: 0.7rem 1.3rem;
-            border-radius: 5px;
-            color: #fff;
-            font-weight: 600;
-            cursor: pointer;
-            text-transform: uppercase;
-            font-size: 0.9rem;
-            transition: background-color 0.3s ease;
-        }
-        .btn-info:hover {
-            background-color: #a3050d;
-        }
-        /* Imagen circuito */
-        .circuit-img {
-            flex: 1;
-            max-width: 600px;
-            border-radius: 15px;
-            box-shadow: 0 0 15px 3px #b21414;
-        }
-        .circuit-img img {
-            width: 100%;
-            border-radius: 15px;
-            display: block;
-        }
-
-        main {
-            position: relative;
-            z-index: 1;
-        }
-
-        #menu-toggle{
-            display: none;
-        }
-
-/* ---------- VISTA MOBILE ---------- */
-@media (max-width: 480px) {
-
-  /* Header */
-    header {
+header {
+    width: 100%;
+    background-color: rgba(46, 44, 44, 0.479);
+    border-bottom: 2px solid #ff0000;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
-    padding: 10px 15px;
-    position: relative;
-    }
-  .menu {
+    padding: 10px 8px;
+}
+.logo{
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 0.95rem;
+}
+nav ul li a:hover {
+    color: #f44336;
+}
+.submenu{
     display: none;
     flex-direction: column;
-    background-color: #111;
-    position: absolute;
-    top: 0px;
-    right: 0;
-    width: 100%;
-    border-top: 2px solid rgb(20, 20, 20);
-    text-align: center;
-    padding: 10px 0;
-  }
-
-  #menu-toggle:checked + .menu-icon + .navbar .menu {
-    display: flex;
-  }
-    nav{
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 100%;
-        background-color: #111;
-        text-align: center;
-        border-top: 2px solid  #444;
-        padding: 15px 0;
-        z-index: 10;
-    }
-    #menu-toggle:checked + .menu-icon + nav{
-        display: flex;
-    }
-
-    nav ul{
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-    nav ul li a{
-        color: white;
-        font-size: 15px;
-        text-decoration: none;
-    }
-    nav ul li a:hover{
-        color: #f44336;
-    }
-    .menu-icon {
-        display: block;
-        font-size: 2rem;
-        color: white;
-        cursor: pointer;
-        user-select: none;
-    }
-
-
-
-/* INDEX */
-    main{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        padding: 15px;
-        width: 100%;
-    }
-    main h2{
-        width: 100%;
-        font-size: 17px;
-        margin-bottom: 10px;
-    }
-    main img{
-        width: 90%;
-        max-width: 390px;
-        max-height: 350px;
-        border-radius: 10px;
-        margin-bottom: 15px;
-    }
-    main h3{
-        font-size: 17px;
-        margin-bottom: 7px;
-    }
-    main p{
-        font-size: 15px;
-        margin-bottom: 15px;
-        padding: 0 7px;
-    }
-    main button .btn-info{
-        display: block;
-        margin: 0 auto;
-        font-size: 15px;
-    }
-/* ESCUDERIAS */
-
-    .grid-escuderias{
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(10,); 
-    gap: 18px;
-    justify-items: center;
-    padding: 10px 12px;
-    box-sizing: border-box;
-    }
-    .grid-item-piloto-1,
-    .grid-item-piloto-2{
-        display: none;
-    }
-    .grid-info-auto{
-        display: block;
-        grid-column: 1 / -1;
-        margin: 0 auto;
-        width: 100%;
-        max-width: 420px;
-        margin: 0 auto;
-        padding: 18px;
-        box-sizing: border-box;
-    }
-    .grid-info-auto h2{
-        text-align: center;
-        font-size: 35px;
-    }
-    .grid-info-auto p{
-        text-align: center;
-        font-size: 18px;
-    }
-
-
-
-
-
-
-  /* Grilla: 1 columna, imagen arriba */
-    .grid-circuitos {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-        padding: 20px;
-    }
-
-    .grid-item-circuitos {
-        flex-direction: column;
-        text-align: center;
-        box-sizing: border-box;
-        padding: 10px;
-        width: 100%;
-    }
-
-    .grid-item-circuitos img {
-        width: 100%;
-        height: auto;
-        margin-bottom: 10px;
-    }
-
-    .grid-item-circuitos .info {
-    text-align: center;
-    }
-    .grid-item-circuitos ul{
-        text-align: center;
-        justify-items: center;
-    }
 }
-
-
-
-.menu-horizontal li:hover .menu-vertical{
-    display: block; 
-    list-style: none;
-
+#menu-toggle, .menu-icon {
+    display: none;
 }
-
-.menu-vertical li:hover{
-    background-color: rgba(179, 179, 179, 0.664);
-    display: flex;
-    justify-content: center;
-    list-style: none;
+.menu-icon {
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: white;
+}
+footer {
     text-align: center;
-}
-
-
-.menu-vertical li a{
-    display: flex;
-    color: rgb(255, 255, 255);
-    padding: 15px 15px 15px 15px;
-    text-align: center;
-    list-style: none;
-
-}
-
-
-.footer{
+    padding: 20px;
     border-top: 2px solid red;
 }
 
-.footer-links {                                     /*LINKS DEL FOOTER*/
-    color:rgb(255, 255, 255);
-    display: flex;
-    justify-content: center;
-    padding-left: 3px;
-    text-decoration: underline;
+footer a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
 }
+
+footer a:hover {
+    color: red;
+}
+
+
+
+                    /* INDEX */
+
+main {
+    max-width: 1200px;
+    margin: 3rem auto;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    padding: 0 1rem; 
+    background-color: rgba(47, 44, 44, 0.465);
+    border-radius: 15px;    }
+h1{
+    display: flex;
+    color: white ;
+    justify-content: center;
+    width:100% ;
+}
+.info {
+    flex: 1;
+}
+.info h2 {
+    color: #bd0a0a;
+    font-size: 2rem;
+    font-weight: 900;
+    text-decoration: underline;
+    margin-bottom: 1.5rem;
+}
+.info h3 {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border-left: 4px solid #bd0a0a;
+    padding-left: 0.6rem;
+    margin-bottom: 1rem;
+}
+.info p {
+    font-size: 0.9rem;
+    color: #d0d0d0;
+    margin-bottom: 1.5rem;
+}
+.btn-info {
+    background-color: #e30613;
+    border: none;
+    padding: 0.7rem 1.3rem;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+.btn-info:hover {
+    background-color: #a3050d;
+}
+.circuit-img {
+    flex: 1;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px 3px #b21414;
+}
+.circuit-img img {
+    width: 100%;
+    border-radius: 15px;
+    display: block;
+}
+main {
+    position: relative;
+    z-index: 1;
+}
+#menu-toggle{
+    display: none;
+}
+
+
+                    /*PILOTOS*/
 
 .grid-pilotos{
     display: grid;
@@ -366,10 +163,8 @@ body {
     align-content: center;
     justify-content: center
 }
-
-
 .grid-item{
-    background-color: rgba(0, 0, 0, 0.4048);
+    background-color: rgba(46, 44, 44, 0.479);
     background-size: contain;
     background-repeat: no-repeat;
     margin: 10px;
@@ -379,7 +174,6 @@ body {
     border-radius: 10px;
     border: solid 3px rgb(0, 0, 0);
 }
-
 #grid-1{
     background-image: url(/assets/img/LandoNorris\ _3.jpeg);
 }#grid-2{
@@ -421,7 +215,6 @@ body {
 }#grid-20{
     background-image: url(/assets/img/FrancoColapinto.jpeg);
 }
-
 .grid-pilotos h2{
     font-size: 42px;
     text-decoration: overline;
@@ -432,12 +225,10 @@ body {
     color: white;
     font-size: 20px;
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.316);
+    background-color: rgba(46, 44, 44, 0.479);
     position: relative;
     padding: 15px;
-
 }
-
 .grid-item-info-1{
     background-image: url(/assets/img/mclaren-mini.jpeg);
     background-size: cover;
@@ -580,6 +371,7 @@ body {
     padding: 20px;
 }
 
+                /*ESCUDERIAS*/
 
 .grid-escuderias{
     display: grid;
@@ -590,7 +382,7 @@ body {
     text-align: center;
 }
 .grid-item-piloto-1{
-    background-color: rgba(0, 0, 0, 0.4048);
+    background-color: rgba(46, 44, 44, 0.479);
     background-size: contain;
     background-repeat: no-repeat;
     margin: 10px;
@@ -600,14 +392,12 @@ body {
     border-radius: 10px;
     border: solid 3px black;
 }
-
-
 .grid-info-auto p{
     display: block;
-    background-color: rgba(65, 58, 58, 0.601);
+    background-color: rgba(46, 44, 44, 0.479);
     border-radius: 10px;
     margin-top: 32%;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 20px;
     
 }
@@ -621,8 +411,6 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
 }
-
-
 #grid-escuderias-1{
         background-image: url(/assets/img/OscarPiastri.jpeg );
 }
@@ -796,252 +584,50 @@ body {
     padding-bottom: 60px;
 }
 
+                /*CIRCUITOS*/
 
-
-
-
-
-
-
-
-
-        main {
-            max-width: 1200px;
-            margin: 3rem auto;
-            display: flex;
-            gap: 3rem;
-            align-items: center;
-            padding: 0 1rem; 
-            background-color: rgba(47, 44, 44, 0.465);
-            border-radius: 15px;
-        }
-
-                    /* Texto próximo gran premio */
-        .info {
-            flex: 1;
-        }
-        .info h2 {
-            color: #bd0a0a;
-            font-size: 2rem;
-            font-weight: 900;
-            text-decoration: underline;
-            margin-bottom: 1.5rem;
-        }
-
-        .info h3{
-            color: #fff;
-            font-size: 1.4rem;
-            font-weight: 700;
-            border-left: 4px solid #bd0a0a;
-            padding-left: 0.6rem;
-            margin-bottom: 1rem;
-        }
-                .info p {
-            font-size: 0.9rem;
-            color: #d0d0d0;
-            margin-bottom: 1.5rem;
-        }
-        
-
-        .btn-info {
-            background-color: #e30613;
-            border: none;
-            padding: 0.7rem 1.3rem;
-            border-radius: 5px;
-            color: #fff;
-            font-weight: 600;
-            cursor: pointer;
-            text-transform: uppercase;
-            font-size: 0.9rem;
-            transition: background-color 0.3s ease;
-        }
-        .btn-info:hover {
-            background-color: #a3050d;
-        }
-        /* Imagen circuito */
-        .circuit-img {
-            flex: 1;
-            max-width: 600px;
-            border-radius: 15px;
-            box-shadow: 0 0 15px 3px #b21414;
-        }
-        .circuit-img img {
-            width: 100%;
-            border-radius: 15px;
-            display: block;
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.contenedor-1 {
-    padding: 60px 10%;
-    background-color: rgba(46, 44, 44, 0.479);
-}
-
-/* Título principal */
-.contenedor-1 h1 {
-    text-align: center;
-    font-size: 45px;
-    letter-spacing: 2px;
-    color: #e10600;
-}
-
-.contenido-1 {
+.grid-circuitos {
+    width: 90%;
+    margin: 25px auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 40px;
-    margin: 35px;
+    grid-template-columns:  1fr;
+    gap: 25px;
 }
-
-/* ---------- TEXTO ---------- */
-.texto-contenedor-1 h2 {
-    font-size: 2rem;
-    color: #fff;
-    margin-bottom: 15px;
-    border-left: 4px solid #e10600;
-    padding-left: 10px;
-}
-
-.info-contenedor-1 p {
-    font-size: 1rem;
-    color: #ccc;
-    text-align: justify;
-    margin-bottom: 25px;
-}
-
-/* Botón */
-.boton-mas-info {
-    background-color: #e10600;
-    border: none;
-    padding: 12px 25px;
-    color: #fff;
-    font-weight: bold;
-    border-radius: 8px;
-    letter-spacing: 1px;
-
-}
-
-.boton-mas-info:hover {
-    background-color: #fff;
-    color: #e10600;
-
-}
-
-/* ---------- IMAGEN ---------- */
-.img-circuito-monaco {
-    display: grid;
-    place-items: center;
-    position: relative;
-}
-
-.curva {
+.grid-item-circuitos {
+    display: flex;
+    grid-template-columns:  1fr 1fr;
+    flex-direction:column;
     width: 100%;
+    align-items: center;
+    background-color: rgba(46, 44, 44, 0.479);
+    border: 1px solid red;
     border-radius: 15px;
-    box-shadow: 0 0 20px rgba(225, 6, 0, 0.5);
+    padding: 10px;
+    box-shadow: 0 0 5px red;
+
 }
-
-#menu-toggle,
-.menu-icon {
-  display: none;
-}
-
-    .menu-icon {
-        font-size: 1.8rem;
-        cursor: pointer;
-        color: white;
-    }
-
-/* ---------- GRID CIRCUITOS ---------- */
-    .grid-circuitos {
-        width: 90%;
-        margin: 25px auto;
-        display: grid;
-        grid-template-columns:  1fr;
-        gap: 25px;
-    }
-
-    .grid-item-circuitos {
-        display: flex;
-        grid-template-columns:  1fr 1fr;
-        flex-direction:column;
-        width: 100%;
-        align-items: center;
-        background-color: rgba(27, 24, 24, 0.45);
-        border: 1px solid red;
-        border-radius: 15px;
-        padding: 10px;
-        box-shadow: 0 0 5px red;
-    
-    }
-
-    .grid-item-circuitos img {
+.grid-item-circuitos img {
     width: 45%;
     margin-bottom: 0;
     border-radius: 10px;
 }
-
 .grid-item-circuitos .info {
     width: 100%;
     text-align: left;
     }
-
 .grid-item-circuitos h2 {
     text-align: left;
     margin-bottom: 5px;
     color: white;
     text-decoration: underline;
-
 }
-
 .grid-item-circuitos ul {
     list-style: none;
-
 }
-
 .grid-item-circuitos ul li {
     margin-bottom: 5px;
     color: white;
 }
-
-/* ---------- FOOTER ---------- */
-footer {
-    text-align: center;
-    padding: 20px;
-    border-top: 2px solid red;
-}
-
-footer a {
-    margin: 0 10px;
-    color: white;
-    text-decoration: none;
-}
-
-footer a:hover {
-    color: red;
-}
-
-
-
-
-
-
-
-
-
-
-
 #grid-circuitos-1{
     background-image: url(/assets/img/Australia_Circuit-removebg-preview.png);
     background-position: center;
@@ -1115,3 +701,274 @@ footer a:hover {
     background-image: url(/assets/img/Abu_Dhabi_Circuit.png);
     background-position: center;
 }
+
+                    /*NEUMATICOS*/
+
+.container-neumaticos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 0;
+}
+.card-neumatico{
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0 0 0 0.1);
+    width: 80%;
+    padding: 20px 30px;
+}
+.card img{
+    width: 150px;
+    height: auto;
+    margin-right: 40px;
+}
+.info-neumaticos h2{
+    color: white;
+    margin-bottom: 10px;
+    font-size: 40px;
+    padding-left: 25%;
+    text-decoration: underline;
+}
+.info-neumaticos ul{
+    list-style: none;
+    font-size: 25px;
+    padding-left:25%;
+    margin: 0;
+    color: white;
+}
+.info-neumaticos li{
+    font-size: 25px;
+}
+.info-neumaticos ul li strong{
+    font-weight: bold;
+    text-decoration: underline;
+    padding-right: 15px;
+}
+
+
+                    /*CONTACTO*/
+
+.cuadro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(46, 44, 44, 0.479);
+    border: 1px solid red;
+    border-radius: 15px;
+    box-shadow: 0 0 10px red;
+    padding: 25px;
+    width: 100%;
+    margin-top: 20px;
+}
+.cuadro h2{
+    color: rgb(255, 255, 255);
+}
+.cuadro p{
+    color: white;
+}
+.contacto p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: white;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input[type="email"] {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    text-align: center;
+}
+button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+button:hover {
+    background-color: darkred;
+}
+.qr img {
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+
+
+/* ---------- VISTA MOBILE ---------- */
+        @media (max-width: 480px) {
+            header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: black;
+                padding: 10px 15px;
+                position: relative;
+            }
+            .menu {
+                display: none;
+                flex-direction: column;
+                background-color: #111;
+                position: absolute;
+                top: 0px;
+                right: 0;
+                width: 100%;
+                border-top: 2px solid rgb(20, 20, 20);
+                text-align: center;
+                padding: 10px 0;
+            }
+            #menu-toggle:checked + .menu-icon + .navbar .menu {
+            display: flex;
+            }
+            nav{
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                width: 100%;
+                background-color: #111;
+                text-align: center;
+                border-top: 2px solid  #444;
+                padding: 15px 0;
+                z-index: 10;
+            }
+            #menu-toggle:checked + .menu-icon + nav{
+                display: flex;
+            }
+            nav ul{
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            nav ul li a{
+                color: white;
+                font-size: 15px;
+                text-decoration: none;
+            }
+            nav ul li a:hover{
+                color: #f44336;
+            }
+            .menu-icon {
+                display: block;
+                font-size: 2rem;
+                color: white;
+                cursor: pointer;
+                user-select: none;
+            }
+
+
+/* INDEX */
+            main{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                padding: 15px;
+                width: 100%;
+                background-color: rgba(47, 44, 44, 0.465);
+                border-radius: 15px;
+            }
+            main h2{
+                width: 100%;
+                font-size: 17px;
+                margin-bottom: 10px;
+            }
+            main img{
+                width: 90%;
+                max-width: 390px;
+                max-height: 350px;
+                border-radius: 10px;
+                margin-bottom: 15px;
+            }
+            main h3{
+                font-size: 17px;
+                margin-bottom: 7px;
+            }
+            main p{
+                font-size: 15px;
+                margin-bottom: 15px;
+                padding: 0 7px;
+            }
+            main button .btn-info{
+                display: block;
+                margin: 0 auto;
+                font-size: 15px;
+            }
+
+
+/* ESCUDERIAS */
+            .grid-escuderias{
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(10,); 
+                gap: 18px;
+                justify-items: center;
+                padding: 10px 12px;
+                box-sizing: border-box;
+            }
+            .grid-item-piloto-1,
+            .grid-item-piloto-2{
+                display: none;
+            }
+            .grid-info-auto{
+                display: block;
+                grid-column: 1 / -1;
+                margin: 0 auto;
+                width: 100%;
+                max-width: 420px;
+                margin: 0 auto;
+                padding: 18px;
+                box-sizing: border-box;
+            }
+            .grid-info-auto h2{
+                text-align: center;
+                font-size: 35px;
+            }
+            .grid-info-auto p{
+                text-align: center;
+                font-size: 18px;
+            }
+
+
+/*CIRCUITOS*/
+            .grid-circuitos {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 20px;
+                padding: 20px;
+            }
+            .grid-item-circuitos {
+                flex-direction: column;
+                text-align: center;
+                box-sizing: border-box;
+                padding: 10px;
+                width: 100%;
+            }
+            .grid-item-circuitos img {
+                width: 100%;
+                height: auto;
+                margin-bottom: 10px;
+            }
+            .grid-item-circuitos .info {
+            text-align: center;
+            }
+            .grid-item-circuitos ul{
+                text-align: center;
+                justify-items: center;
+            }
+    }
