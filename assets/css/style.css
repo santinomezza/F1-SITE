@@ -8,7 +8,7 @@
                     /*ESTILOS GENERALES*/
 
 body {
-    background-image:url(/assets/img/FONDOSILUETA.jpg);        
+    background-image:url("../img/FONDOSILUETA.jpg");        
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
