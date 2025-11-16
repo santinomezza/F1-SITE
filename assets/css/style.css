@@ -586,120 +586,42 @@ main {
 
                 /*CIRCUITOS*/
 
-.grid-circuitos {
-    width: 90%;
-    margin: 25px auto;
-    display: grid;
-    grid-template-columns:  1fr;
-    gap: 25px;
-}
 .grid-item-circuitos {
-    display: flex;
-    grid-template-columns:  1fr 1fr;
-    flex-direction:column;
-    width: 100%;
-    align-items: center;
     background-color: rgba(46, 44, 44, 0.479);
-    border: 1px solid red;
+    padding: 20px;
     border-radius: 15px;
-    padding: 10px;
-    box-shadow: 0 0 5px red;
-
+    margin-bottom: 20px;
 }
-.grid-item-circuitos img {
-    width: 45%;
-    margin-bottom: 0;
-    border-radius: 10px;
-}
-.grid-item-circuitos .info {
-    width: 100%;
-    text-align: left;
-    }
 .grid-item-circuitos h2 {
-    text-align: left;
-    margin-bottom: 5px;
     color: white;
+    margin-bottom: 15px;
     text-decoration: underline;
+    font-size: 35px;
+    padding-left: 20px;
 }
-.grid-item-circuitos ul {
+.circuitos-content {
+    display: flex;
+    gap: 20%;
+    align-items:center;;
+}
+.circuitos-content img {
+    width: 40%;
+    border-radius: 10px;
+    padding-left: 30px;
+}
+.circuitos-content ul {
     list-style: none;
-}
-.grid-item-circuitos ul li {
-    margin-bottom: 5px;
     color: white;
+    font-size: 20px;
+    border-left: 4px solid rgb(255, 0, 0);
+    padding-left: 3%;
+    border-right: 4px solid red;
+    padding-right: 3%;
 }
-#grid-circuitos-1{
-    background-image: url(../img/Australia_Circuit-removebg-preview.png);
-    background-position: center;
-}#grid-circuitos-2{
-    background-image: url(../img/China_Circuit-removebg-preview.png);
-    background-position: center;
-}#grid-circuitos-3{
-    background-image: url(../img/Japan_Circuit-removebg-preview.png);
-    background-position: center;
-}#grid-circuitos-4{
-    background-image: url(../img/Bahrain_Circuit_1-removebg-preview.png);
-    background-position: center;
-}#grid-circuitos-5{
-    background-image: url(../img/Saudi_Arabia_Circuit_1-removebg-preview.png);
-    background-position: center;
-}#grid-circuitos-6{
-    background-image: url(../img/Miami_Circuit_11zon.png);
-    background-position: center;
-}#grid-circuitos-7{
-    background-image: url(../img/Emilia_Romagna_Circuit.png);
-    background-position: center;
-}#grid-circuitos-8{
-    background-image: url(../img/Monaco_Circuit.png);
-    background-position: center;
-}#grid-circuitos-9{
-    background-image: url(../img/Spain_Circuit.png);
-    background-position: center;
-}#grid-circuitos-10{
-    background-image: url(../img/Canada_Circuit.png);
-    background-position: center;
-}#grid-circuitos-11{
-    background-image: url(../img/Austria_Circuit.png);
-    background-position: center;
-}#grid-circuitos-12{
-    background-image: url(../img/Great_Britain_Circuit.png);
-    background-position: center;
-}#grid-circuitos-13{
-    background-image: url(../img/Belgium_Circuit.png);
-    background-position: center;
-}#grid-circuitos-14{
-    background-image: url(../img/Hungary_Circuit.png);
-    background-position: center;
-}#grid-circuitos-15{
-    background-image: url(../img/Netherlands_Circuit.png);
-    background-position: center;
-}#grid-circuitos-16{
-    background-image: url(../img/Italy_Circuit.png);
-    background-position: center;
-}#grid-circuitos-17{
-    background-image: url(../img/Baku_Circuit.png);
-}#grid-circuitos-18{
-    background-image: url(../img/Singapore_Circuit.png);
-    background-position: center;
-}#grid-circuitos-19{
-    background-image: url(../img/USA_Circuit.png);
-    background-position: center;
-}#grid-circuitos-20{
-    background-image: url(../img/Mexico_Circuit.png);
-    background-position: center;
-}#grid-circuitos-21{
-    background-image: url(../img/Brazil_Circuit.png);
-    background-position: center;
-}#grid-circuitos-22{
-    background-image: url(../img/Las_Vegas_Circuit.png);
-    background-position: center;
-}#grid-circuitos-23{
-    background-image: url(../img/Qatar_Circuit.png);
-    background-position: center;
-}#grid-circuitos-24{
-    background-image: url(../img/Abu_Dhabi_Circuit.png);
-    background-position: center;
+.circuitos-content ul li {
+    margin-bottom: 8px;
 }
+
 
                     /*NEUMATICOS*/
 
