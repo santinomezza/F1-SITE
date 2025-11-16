@@ -175,7 +175,7 @@ main {
     border: solid 3px rgb(0, 0, 0);
 }
 #grid-1{
-    background-image: url(/assets/img/LandoNorris\ _3.jpeg);
+    background-image: url(../img/LandoNorris\ _3.jpeg);
 }#grid-2{
     background-image: url(/assets/img/OscarPiastri.jpeg);
 }#grid-3{
@@ -230,7 +230,7 @@ main {
     padding: 15px;
 }
 .grid-item-info-1{
-    background-image: url(/assets/img/mclaren-mini.jpeg);
+    background-image: url(../img/mclaren-mini.jpeg);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
