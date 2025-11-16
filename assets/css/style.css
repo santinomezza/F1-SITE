@@ -867,29 +867,34 @@ button:hover {
 
 
 /*CIRCUITOS*/
-            .grid-circuitos {
-                display: grid;
-                grid-template-columns: 1fr;
-                gap: 20px;
-                padding: 20px;
-            }
-            .grid-item-circuitos {
-                flex-direction: column;
-                text-align: center;
-                box-sizing: border-box;
-                padding: 10px;
-                width: 100%;
-            }
-            .grid-item-circuitos img {
-                width: 100%;
-                height: auto;
-                margin-bottom: 10px;
-            }
-            .grid-item-circuitos .info {
-            text-align: center;
-            }
-            .grid-item-circuitos ul{
-                text-align: center;
-                justify-items: center;
-            }
+
+        .grid-item-circuitos {
+            padding: 15px;
+            margin-bottom: 20px;
+            text-align: center; 
+        }
+        .grid-item-circuitos h2 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+        .circuitos-content {
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .circuitos-content img {
+            width: 80%;   
+            max-width: 300px;
+        }
+        .circuitos-content ul {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            text-align: left; 
+        }
+        .circuitos-content ul li {
+            margin-bottom: 6px;
+            font-size: 16px;
+        }
     }
+
