@@ -177,43 +177,43 @@ main {
 #grid-1{
     background-image: url(../img/LandoNorris\ _3.jpeg);
 }#grid-2{
-    background-image: url(/assets/img/OscarPiastri.jpeg);
+    background-image: url(../img/OscarPiastri.jpeg);
 }#grid-3{
-    background-image: url(/assets/img/MaxVerstappen.jpeg);
+    background-image: url(../img/MaxVerstappen.jpeg);
 }#grid-4{
-    background-image: url(/assets/img/GeorgeRussell.jpeg);
+    background-image: url(../img/GeorgeRussell.jpeg);
 }#grid-5{
-    background-image: url(/assets/img/CharlesLeclerc.jpeg);
+    background-image: url(../img/CharlesLeclerc.jpeg);
 }#grid-6{
-    background-image: url(/assets/img/LewisHamilton.jpeg);
+    background-image: url(../img/LewisHamilton.jpeg);
 }#grid-7{
-    background-image: url(/assets/img/KimiAntonelli.jpeg);
+    background-image: url(../img/KimiAntonelli.jpeg);
 }#grid-8{
-    background-image: url(/assets/img/AlexanderAlbon.jpeg);
+    background-image: url(../img/AlexanderAlbon.jpeg);
 }#grid-9{
-    background-image: url(/assets/img/NicoHulkenberg.jpeg);
+    background-image: url(../img/NicoHulkenberg.jpeg);
 }#grid-10{
-    background-image: url(/assets/img/IsackHadjar.jpeg);
+    background-image: url(../img/IsackHadjar.jpeg);
 }#grid-11{
-    background-image: url(/assets/img/CarlosSainz.jpeg);
+    background-image: url(../img/CarlosSainz.jpeg);
 }#grid-12{
-    background-image: url(/assets/img/FernandoAlonso.jpeg);
+    background-image: url(../img/FernandoAlonso.jpeg);
 }#grid-13{
-    background-image: url(/assets/img/OliverBearman.jpeg);
+    background-image: url(../img/OliverBearman.jpeg);
 }#grid-14{
-    background-image: url(/assets/img/LanceStroll.jpeg);
+    background-image: url(../img/LanceStroll.jpeg);
 }#grid-15{
-    background-image: url(/assets/img/LiamLawson.jpeg);
+    background-image: url(../img/LiamLawson.jpeg);
 }#grid-16{
-    background-image: url(/assets/img/EstebanOcon.jpeg);
+    background-image: url(../img/EstebanOcon.jpeg);
 }#grid-17{
-    background-image: url(/assets/img/YukiTsunoda.jpeg);
+    background-image: url(../img/YukiTsunoda.jpeg);
 }#grid-18{
-    background-image: url(/assets/img/PierreGasly.jpeg);
+    background-image: url(../img/PierreGasly.jpeg);
 }#grid-19{
-    background-image: url(/assets/img/GabrielBortoleto.jpeg);
+    background-image: url(../img/GabrielBortoleto.jpeg);
 }#grid-20{
-    background-image: url(/assets/img/FrancoColapinto.jpeg);
+    background-image: url(../img/FrancoColapinto.jpeg);
 }
 .grid-pilotos h2{
     font-size: 42px;
@@ -251,119 +251,119 @@ main {
     margin: 10px;
     padding: 20px;
 }.grid-item-info-4{
-    background-image: url(/assets/img/mercedes-minii.jpeg);
+    background-image: url(../img/mercedes-minii.jpeg);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
     margin: 10px;
     padding: 20px;
 }.grid-item-info-5{
-    background-image: url(/assets/img/ferrari-mini.jpeg);
+    background-image: url(../img/ferrari-mini.jpeg);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
     margin: 10px;
     padding: 20px;
 }.grid-item-info-6{
-    background-image: url(/assets/img/ferrari-mini.jpeg);
+    background-image: url(../img/ferrari-mini.jpeg);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
     margin: 10px;
     padding: 20px;
 }.grid-item-info-7{
-    background-image: url(/assets/img/mercedes-minii.jpeg);
+    background-image: url(../img/mercedes-minii.jpeg);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
     margin: 10px;
     padding: 20px;
 }.grid-item-info-8{
-    background-image: url(/assets/img/williams-mini-.jpeg);
+    background-image: url(../img/williams-mini-.jpeg);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
     margin: 10px;
     padding: 20px;
 }.grid-item-info-9{
-    background-image: url(/assets/img/stake-mini.jpeg);
+    background-image: url(../img/stake-mini.jpeg);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
     margin: 10px;
     padding: 20px;
 }.grid-item-info-10{
-    background-image: url(/assets/img/red-bull-visa-mini.jpeg);
+    background-image: url(../img/red-bull-visa-mini.jpeg);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
     margin: 10px;
     padding: 20px;
 }.grid-item-info-11{
-    background-image: url(/assets/img/williams-mini-.jpeg);
+    background-image: url(../img/williams-mini-.jpeg);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
     margin: 10px;
     padding: 20px;
 }.grid-item-info-12{
-    background-image: url(/assets/img/aston-martin-mini.jpeg);
+    background-image: url(../img/aston-martin-mini.jpeg);
     background-size: cover; 
     background-position: center;
     border-radius: 10px;
     margin: 10px;
     padding: 20px;
 }.grid-item-info-13{
-    background-image: url(/assets/img/haas-mini.jpeg);
+    background-image: url(../img/Haas-mini.jpeg);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
     margin: 10px;
     padding: 20px;
 }.grid-item-info-14{
-    background-image: url(/assets/img/aston-martin-mini.jpeg);
+    background-image: url(../img/aston-martin-mini.jpeg);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
     margin: 10px;
     padding: 20px;
 }.grid-item-info-15{
-    background-image: url(/assets/img/red-bull-visa-mini.jpeg);
+    background-image: url(../img/red-bull-visa-mini.jpeg);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
     margin: 10px;
     padding: 20px;
 }.grid-item-info-16{
-    background-image: url(/assets/img/haas-mini.jpeg);
+    background-image: url(../img/Haas-mini.jpeg);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
     margin: 10px;
     padding: 20px;
 }.grid-item-info-17{
-    background-image: url(/assets/img/red-bull-mini.jpeg);
+    background-image: url(../img/red-bull-visa-mini.jpeg);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
     margin: 10px;
     padding: 20px;
 }.grid-item-info-18{
-    background-image: url(/assets/img/alpine-mini.jpeg);
+    background-image: url(../img/alpine-mini.jpeg);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
     margin: 10px;
     padding: 20px;
 }.grid-item-info-19{
-    background-image: url(/assets/img/stake-mini.jpeg);
+    background-image: url(../img/stake-mini.jpeg);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
     margin: 10px;
     padding: 20px;
 }.grid-item-info-20{
-    background-image: url(/assets/img/alpine-mini.jpeg);
+    background-image: url(../img/alpine-mini.jpeg);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -412,7 +412,7 @@ main {
     background-repeat: no-repeat;
 }
 #grid-escuderias-1{
-        background-image: url(/assets/img/OscarPiastri.jpeg );
+        background-image: url(../img/OscarPiastri.jpeg );
 }
 #grid-escuderias-2{
     background-image: url(/assets/img/LandoNorris\ _3.jpeg);
