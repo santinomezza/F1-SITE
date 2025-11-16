@@ -237,14 +237,14 @@ main {
     margin: 10px;
     padding: 20px;
 }.grid-item-info-2{
-    background-image: url(/assets/img/mclaren-mini.jpeg);
+    background-image: url(../img/mclaren-mini.jpeg);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
     margin: 10px;
     padding: 20px;
 }.grid-item-info-3{
-    background-image: url(/assets/img/red-bull-mini.jpeg);
+    background-image: url(../img/red-bull-mini.jpeg);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
