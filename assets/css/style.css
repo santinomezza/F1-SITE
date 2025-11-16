@@ -629,76 +629,75 @@ main {
     color: white;
 }
 #grid-circuitos-1{
-    background-image: url(/assets/img/Australia_Circuit-removebg-preview.png);
+    background-image: url(../img/Australia_Circuit-removebg-preview.png);
     background-position: center;
 }#grid-circuitos-2{
-    background-image: url(/assets/img/China_Circuit-removebg-preview.png);
+    background-image: url(../img/China_Circuit-removebg-preview.png);
     background-position: center;
 }#grid-circuitos-3{
-    background-image: url(/assets/img/Japan_Circuit-removebg-preview.png);
+    background-image: url(../img/Japan_Circuit-removebg-preview.png);
     background-position: center;
 }#grid-circuitos-4{
-    background-image: url(/assets/img/Bahrain_Circuit_1-removebg-preview.png);
+    background-image: url(../img/Bahrain_Circuit_1-removebg-preview.png);
     background-position: center;
 }#grid-circuitos-5{
-    background-image: url(/assets/img/Saudi_Arabia_Circuit_1-removebg-preview.png);
+    background-image: url(../img/Saudi_Arabia_Circuit_1-removebg-preview.png);
     background-position: center;
 }#grid-circuitos-6{
-    background-image: url(/assets/img/Miami_Circuit_11zon.png);
+    background-image: url(../img/Miami_Circuit_11zon.png);
     background-position: center;
 }#grid-circuitos-7{
-    background-image: url(/assets/img/Emilia_Romagna_Circuit.png);
+    background-image: url(../img/Emilia_Romagna_Circuit.png);
     background-position: center;
 }#grid-circuitos-8{
-    background-image: url(/assets/img/Monaco_Circuit.png);
+    background-image: url(../img/Monaco_Circuit.png);
     background-position: center;
 }#grid-circuitos-9{
-    background-image: url(/assets/img/Spain_Circuit.png);
+    background-image: url(../img/Spain_Circuit.png);
     background-position: center;
 }#grid-circuitos-10{
-    background-image: url(/assets/img/Canada_Circuit.png);
+    background-image: url(../img/Canada_Circuit.png);
     background-position: center;
 }#grid-circuitos-11{
-    background-image: url(/assets/img/Austria_Circuit.png);
+    background-image: url(../img/Austria_Circuit.png);
     background-position: center;
 }#grid-circuitos-12{
-    background-image: url(/assets/img/Great_Britain_Circuit.png);
+    background-image: url(../img/Great_Britain_Circuit.png);
     background-position: center;
 }#grid-circuitos-13{
-    background-image: url(/assets/img/Belgium_Circuit.png);
+    background-image: url(../img/Belgium_Circuit.png);
     background-position: center;
 }#grid-circuitos-14{
-    background-image: url(/assets/img/Hungary_Circuit.png);
+    background-image: url(../img/Hungary_Circuit.png);
     background-position: center;
 }#grid-circuitos-15{
-    background-image: url(/assets/img/Netherlands_Circuit.png);
+    background-image: url(../img/Netherlands_Circuit.png);
     background-position: center;
 }#grid-circuitos-16{
-    background-image: url(/assets/img/Italy_Circuit.png);
+    background-image: url(../img/Italy_Circuit.png);
     background-position: center;
 }#grid-circuitos-17{
-    background-image: url(/assets/img/Baku_Circuit.png);
-    background-position: center;
+    background-image: url(../img/Baku_Circuit.png);
 }#grid-circuitos-18{
-    background-image: url(/assets/img/Singapore_Circuit.png);
+    background-image: url(../img/Singapore_Circuit.png);
     background-position: center;
 }#grid-circuitos-19{
-    background-image: url(/assets/img/USA_Circuit.png);
+    background-image: url(../img/USA_Circuit.png);
     background-position: center;
 }#grid-circuitos-20{
-    background-image: url(/assets/img/Mexico_Circuit.png);
+    background-image: url(../img/Mexico_Circuit.png);
     background-position: center;
 }#grid-circuitos-21{
-    background-image: url(/assets/img/Brazil_Circuit.png);
+    background-image: url(../img/Brazil_Circuit.png);
     background-position: center;
 }#grid-circuitos-22{
-    background-image: url(/assets/img/Las_Vegas_Circuit.png);
+    background-image: url(../img/Las_Vegas_Circuit.png);
     background-position: center;
 }#grid-circuitos-23{
-    background-image: url(/assets/img/Qatar_Circuit.png);
+    background-image: url(../img/Qatar_Circuit.png);
     background-position: center;
 }#grid-circuitos-24{
-    background-image: url(/assets/img/Abu_Dhabi_Circuit.png);
+    background-image: url(../img/Abu_Dhabi_Circuit.png);
     background-position: center;
 }
 
