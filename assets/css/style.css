@@ -415,7 +415,7 @@ main {
         background-image: url(../img/OscarPiastri.jpeg );
 }
 #grid-escuderias-2{
-    background-image: url(../..//img/OscarPiastri.jpeg);
+    background-image: url(../img/OscarPiastri.jpeg);
 }
 #grid-escuderias-3{
         background-image: url(../img/MaxVerstappen.jpeg );
@@ -430,45 +430,45 @@ main {
     background-image: url(../img/LewisHamilton.jpeg)
 }
 #grid-escuderias-7{
-        background-image: url(/assets/img/GeorgeRussell.jpeg );
+        background-image: url(../img/GeorgeRussell.jpeg );
 }
 #grid-escuderias-8{
-    background-image: url(/assets/img/KimiAntonelli.jpeg);
+    background-image: url(../img/KimiAntonelli.jpeg);
 }
 #grid-escuderias-9{
-        background-image: url(/assets/img/FernandoAlonso.jpeg );
+        background-image: url(../img/FernandoAlonso.jpeg );
 }
 #grid-escuderias-10{
-    background-image: url(/assets/img/LanceStroll.jpeg);
+    background-image: url(../img/LanceStroll.jpeg);
 }
 #grid-escuderias-11{
-        background-image: url(/assets/img/CarlosSainz.jpeg );
+        background-image: url(../img/CarlosSainz.jpeg );
 }
 #grid-escuderias-12{
-    background-image: url(/assets/img/AlexanderAlbon.jpeg);
+    background-image: url(../img/AlexanderAlbon.jpeg);
 }
 #grid-escuderias-13{
-        background-image: url(/assets/img/LiamLawson.jpeg );
+        background-image: url(../img/LiamLawson.jpeg );
 }
 #grid-escuderias-14{
-    background-image: url(/assets/img/IsackHadjar.jpeg);
+    background-image: url(../img/IsackHadjar.jpeg);
 }
 #grid-escuderias-15{
-        background-image: url(/assets/img/PierreGasly.jpeg );
+        background-image: url(../img/PierreGasly.jpeg );
 }
 #grid-escuderias-16{
-    background-image: url(/assets/img/FrancoColapinto.jpeg);
+    background-image: url(../img/FrancoColapinto.jpeg);
 }
 #grid-escuderias-17{
-        background-image: url(/assets/img/NicoHulkenberg.jpeg );
+        background-image: url(../img/NicoHulkenberg.jpeg );
 }
 #grid-escuderias-18{
-    background-image: url(/assets/img/GabrielBortoleto.jpeg);
+    background-image: url(../img/GabrielBortoleto.jpeg);
 }#grid-escuderias-19{
-        background-image: url(/assets/img/EstebanOcon.jpeg );
+        background-image: url(../img/EstebanOcon.jpeg );
 }
 #grid-escuderias-20{
-    background-image: url(/assets/img/OliverBearman.jpeg);
+    background-image: url(../img/OliverBearman.jpeg);
 }
 
 .grid-info-auto{
@@ -479,7 +479,7 @@ main {
     background-color: rgba(59, 54, 54, 0.377)
 }
 #auto-1{
-    background-image: url(/assets/img/2025mclarencarright-removebg-preview.png);
+    background-image: url(../img/2025mclarencarright-removebg-preview.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -490,7 +490,7 @@ main {
     padding-bottom: 60px;
 }
 #auto-2{
-    background-image: url(/assets/img/2025redbullracingcarright-removebg-preview.png);
+    background-image: url(../img/2025redbullracingcarright-removebg-preview.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -501,7 +501,7 @@ main {
     
 }
 #auto-3{
-    background-image: url(/assets/img/2025ferraricarright-removebg-preview.png);
+    background-image: url(../img/2025ferraricarright-removebg-preview.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -511,7 +511,7 @@ main {
     padding-bottom: 60px;
 }
 #auto-4{
-    background-image: url(/assets/img/2025mercedescarright-removebg-preview.png);
+    background-image: url(../img/2025mercedescarright-removebg-preview.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -522,7 +522,7 @@ main {
     padding-bottom: 80px;
 }
 #auto-5{
-    background-image: url(/assets/img/2025astonmartincarright-removebg-preview.png);
+    background-image: url(../img/2025astonmartincarright-removebg-preview.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -533,7 +533,7 @@ main {
     padding-bottom: 80px;
 }
 #auto-6{
-    background-image: url(/assets/img/2025williamscarright-removebg-preview.png);
+    background-image: url(../img/2025williamscarright-removebg-preview.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -543,7 +543,7 @@ main {
     padding-bottom: 60px;
 }
 #auto-7{
-    background-image: url(/assets/img/2025racingbullscarright-removebg-preview.png);
+    background-image: url(../img/2025racingbullscarright-removebg-preview.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -554,7 +554,7 @@ main {
     padding-bottom: 80px;
 }
 #auto-8{
-    background-image: url(/assets/img/2025alpinecarright-removebg-preview\ \(1\).png);
+    background-image: url(../img/2025alpinecarright-removebg-preview\ \(1\).png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -564,7 +564,7 @@ main {
     padding-bottom: 60px;
 }
 #auto-9{
-    background-image: url(/assets/img/2025kicksaubercarright-removebg-preview.png);
+    background-image: url(../img/2025kicksaubercarright-removebg-preview.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -574,7 +574,7 @@ main {
     padding-bottom: 60px;
 }
 #auto-10{
-    background-image: url(/assets/img/2025haascarright-removebg-preview.png);
+    background-image: url(../img/2025haascarright-removebg-preview.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
