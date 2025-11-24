@@ -1,0 +1,17 @@
+$primary-color: blue;
+
+// COMPONENTES
+@import "components/body";
+@import "components/header";
+@import "components/footer";
+
+// PÁGINAS
+@import "secciones/index";
+@import "secciones/circuitos";
+@import "secciones/contacto";
+@import "secciones/escuderias";
+@import "secciones/neumaticos";
+@import "secciones/pilotos";
+
+// RESPONSIVE
+@import "responsive/responsive";
