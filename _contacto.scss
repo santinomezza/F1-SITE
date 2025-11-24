@@ -1,0 +1,58 @@
+
+                    /*CONTACTO*/
+
+.cuadro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(46, 44, 44, 0.479);
+    border: 1px solid red;
+    border-radius: 15px;
+    box-shadow: 0 0 10px red;
+    padding: 25px;
+    width: 100%;
+    margin-top: 20px;
+}
+.cuadro h2{
+    color: rgb(255, 255, 255);
+}
+.cuadro p{
+    color: white;
+}
+.contacto p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: white;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input[type="email"] {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    text-align: center;
+}
+button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+button:hover {
+    background-color: darkred;
+}
+.qr img {
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+

@@ -1,0 +1,153 @@
+
+
+
+/* ---------- VISTA MOBILE ---------- */
+        @media (max-width: 480px) {
+
+    .site-header {
+        padding: 10px 15px;
+    }
+
+  /* mostrar el icono y mandarlo a la derecha */
+    .menu-icon {
+        display: block;
+        margin-left: auto;
+    }
+
+  /* ocultar el menú por defecto */
+    .site-nav {
+        display: none;
+        position: absolute;
+        top: 100%;              /* justo debajo del header */
+        left: 0;
+        width: 100%;
+        background-color: #0f0f0ff2;
+        border-top: 1px solid #444;
+        z-index: 10;
+    }
+
+  /* cuando el checkbox está chequeado → mostrar nav */
+    .menu-toggle:checked + .menu-icon + .site-nav {
+        display: block;
+    }
+
+  /* menú en columna, centrado */
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 12px 0 16px;
+        border-bottom: 3px solid red;
+    }
+
+    .menu li a {
+        width: 100%;
+        text-align: center;
+        padding: 4px 0;
+        font-size: 16px;
+    }
+
+/* INDEX */
+            main{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                padding: 15px;
+                width: 100%;
+                background-color: rgba(47, 44, 44, 0.465);
+                border-radius: 15px;
+            }
+            main h2{
+                width: 100%;
+                font-size: 17px;
+                margin-bottom: 10px;
+            }
+            main img{
+                width: 90%;
+                max-width: 390px;
+                max-height: 350px;
+                border-radius: 10px;
+                margin-bottom: 15px;
+            }
+            main h3{
+                font-size: 17px;
+                margin-bottom: 7px;
+            }
+            main p{
+                font-size: 15px;
+                margin-bottom: 15px;
+                padding: 0 7px;
+            }
+            main button .btn-info{
+                display: block;
+                margin: 0 auto;
+                font-size: 15px;
+            }
+
+
+/* ESCUDERIAS */
+            .grid-escuderias{
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(10,); 
+                gap: 18px;
+                justify-items: center;
+                padding: 10px 12px;
+                box-sizing: border-box;
+            }
+            .grid-item-piloto-1,
+            .grid-item-piloto-2{
+                display: none;
+            }
+            .grid-info-auto{
+                display: block;
+                grid-column: 1 / -1;
+                margin: 0 auto;
+                width: 100%;
+                max-width: 420px;
+                margin: 0 auto;
+                padding: 18px;
+                box-sizing: border-box;
+            }
+            .grid-info-auto h2{
+                text-align: center;
+                font-size: 35px;
+            }
+            .grid-info-auto p{
+                text-align: center;
+                font-size: 18px;
+            }
+
+
+/*CIRCUITOS*/
+
+        .grid-item-circuitos {
+            padding: 15px;
+            margin-bottom: 20px;
+            text-align: center; 
+        }
+        .grid-item-circuitos h2 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+        .circuitos-content {
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .circuitos-content img {
+            width: 80%;   
+            max-width: 300px;
+        }
+        .circuitos-content ul {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            text-align: left; 
+        }
+        .circuitos-content ul li {
+            margin-bottom: 6px;
+            font-size: 16px;
+        }
+    }
+

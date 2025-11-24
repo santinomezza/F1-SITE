@@ -1,0 +1,39 @@
+
+                /*CIRCUITOS*/
+
+.grid-item-circuitos {
+    background-color: rgba(46, 44, 44, 0.479);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+.grid-item-circuitos h2 {
+    color: white;
+    margin-bottom: 15px;
+    text-decoration: underline;
+    font-size: 35px;
+    padding-left: 20px;
+}
+.circuitos-content {
+    display: flex;
+    gap: 20%;
+    align-items:center;;
+}
+.circuitos-content img {
+    width: 40%;
+    border-radius: 10px;
+    padding-left: 30px;
+}
+.circuitos-content ul {
+    list-style: none;
+    color: white;
+    font-size: 20px;
+    border-left: 4px solid rgb(255, 0, 0);
+    padding-left: 3%;
+    border-right: 4px solid red;
+    padding-right: 3%;
+}
+.circuitos-content ul li {
+    margin-bottom: 8px;
+}
+

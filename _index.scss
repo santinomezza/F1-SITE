@@ -1,0 +1,75 @@
+
+                    /* INDEX */
+
+main {
+    max-width: 1200px;
+    margin: 3rem auto;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    padding: 0 1rem; 
+    background-color: rgba(47, 44, 44, 0.465);
+    border-radius: 15px;    }
+h1{
+    display: flex;
+    color: white ;
+    justify-content: center;
+    width:100% ;
+}
+.info {
+    flex: 1;
+}
+.info h2 {
+    color: #bd0a0a;
+    font-size: 2rem;
+    font-weight: 900;
+    text-decoration: underline;
+    margin-bottom: 1.5rem;
+}
+.info h3 {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border-left: 4px solid #bd0a0a;
+    padding-left: 0.6rem;
+    margin-bottom: 1rem;
+}
+.info p {
+    font-size: 0.9rem;
+    color: #d0d0d0;
+    margin-bottom: 1.5rem;
+}
+.btn-info {
+    background-color: #e30613;
+    border: none;
+    padding: 0.7rem 1.3rem;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+.btn-info:hover {
+    background-color: #a3050d;
+}
+.circuit-img {
+    flex: 1;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px 3px #b21414;
+}
+.circuit-img img {
+    width: 100%;
+    border-radius: 15px;
+    display: block;
+}
+main {
+    position: relative;
+    z-index: 1;
+}
+#menu-toggle{
+    display: none;
+}
+
