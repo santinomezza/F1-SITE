@@ -155,37 +155,45 @@ main {
 }
 
 .grid-item-circuitos h2 {
+  display: flex;
+  justify-content: center;
   color: white;
   margin-bottom: 15px;
   text-decoration: underline;
   font-size: 35px;
   padding-left: 20px;
+  
 }
 
 .circuitos-content {
   display: flex;
-  gap: 20%;
+  gap: 25%;
   align-items: center;
 }
 
 .circuitos-content img {
-  width: 40%;
+  width: 35%;
   border-radius: 10px;
   padding-left: 30px;
 }
 
 .circuitos-content ul {
+  width: 35%;
+  height: 25rem;
   list-style: none;
   color: white;
-  font-size: 20px;
+  font-size: 30px;
   border-left: 4px solid rgb(255, 0, 0);
   padding-left: 3%;
   border-right: 4px solid red;
   padding-right: 3%;
+  background: linear-gradient(to bottom, rgba(46, 44, 44, 0.305), rgba(46, 44, 44, 0), rgba(46, 44, 44, 0.305));
+  border-radius: 20px
 }
 
 .circuitos-content ul li {
-  margin-bottom: 8px;
+  margin: 20px;
+  padding-top: 8px;
 }
 
 /*CONTACTO*/
@@ -193,21 +201,27 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(46, 44, 44, 0.479);
+  width: 40%; 
+  height: 300px;          
+  margin: 30px auto; 
+  padding: 25px;
+  background: rgba(46, 44, 44, 0.479);
   border: 1px solid red;
   border-radius: 15px;
   box-shadow: 0 0 10px red;
-  padding: 25px;
-  width: 100%;
-  margin-top: 20px;
 }
+
 
 .cuadro h2 {
   color: rgb(255, 255, 255);
+  border-left: 5px solid red;
+  padding-left: 5px;
 }
 
 .cuadro p {
   color: white;
+  margin: auto;
+
 }
 
 .contacto p {
@@ -253,7 +267,7 @@ form {
 
 .grid-info-auto p {
   display: block;
-  background-color: rgba(46, 44, 44, 0.479);
+  background-color: rgba(46, 44, 44, 0.363);
   border-radius: 10px;
   margin-top: 32%;
   color: rgb(255, 255, 255);
@@ -357,7 +371,7 @@ form {
   margin: 10px;
   padding: 20px;
   color: rgba(255, 255, 255, 0.63);
-  background-color: rgba(59, 54, 54, 0.377);
+  background-color: rgba(46, 44, 44, 0.363);
 }
 
 #auto-1 {
@@ -511,15 +525,22 @@ form {
   align-items: center;
   gap: 20px;
   padding: 40px 0;
+  background: none;
 }
 
 .card-neumatico {
   display: flex;
   align-items: center;
   border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   width: 80%;
   padding: 20px 30px;
+  border-left: 4px solid rgb(255, 0, 0);
+  padding-left: 3%;
+  border-right: 4px solid red;
+  padding-right: 3%;
+  border-radius: 20px;
+  background-color: rgba(46, 44, 44, 0.479)
+  
 }
 
 .card img {
@@ -529,11 +550,11 @@ form {
 }
 
 .info-neumaticos h2 {
-  color: white;
   margin-bottom: 10px;
   font-size: 40px;
   padding-left: 25%;
   text-decoration: underline;
+  background: linear-gradient(to right, #fdfdfd, #a09d9d79, rgb(255, 255, 255));-webkit-background-clip: text;color: transparent;
 }
 
 .info-neumaticos ul {
@@ -541,7 +562,7 @@ form {
   font-size: 25px;
   padding-left: 25%;
   margin: 0;
-  color: white;
+  color: rgb(226, 212, 212);
 }
 
 .info-neumaticos li {
@@ -657,7 +678,8 @@ form {
 
 .grid-pilotos h2 {
   font-size: 42px;
-  text-decoration: overline;
+  text-decoration: overline rgb(0, 0, 0);
+  background: linear-gradient(to right, #1a1818, #161313b7, rgb(0, 0, 0));-webkit-background-clip: text;color: transparent;
 }
 
 .grid-pilotos ul {
@@ -666,7 +688,7 @@ form {
   color: white;
   font-size: 20px;
   border-radius: 10px;
-  background-color: rgba(46, 44, 44, 0.479);
+  background: linear-gradient(to bottom, rgba(46, 44, 44, 0.305), rgba(46, 44, 44, 0.068), rgba(46, 44, 44, 0.305));
   position: relative;
   padding: 15px;
 }
