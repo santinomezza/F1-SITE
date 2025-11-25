@@ -97,13 +97,6 @@ main {
   border-radius: 15px;
 }
 
-h1 {
-  display: flex;
-  color: white;
-  justify-content: center;
-  width: 100%;
-}
-
 .info {
   flex: 1;
 }
@@ -129,23 +122,6 @@ h1 {
   font-size: 0.9rem;
   color: #d0d0d0;
   margin-bottom: 1.5rem;
-}
-
-.btn-info {
-  background-color: #e30613;
-  border: none;
-  padding: 0.7rem 1.3rem;
-  border-radius: 5px;
-  color: #fff;
-  font-weight: 600;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  transition: background-color 0.3s ease;
-}
-
-.btn-info:hover {
-  background-color: #a3050d;
 }
 
 .circuit-img {
@@ -244,29 +220,6 @@ form {
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
-
-input[type=email] {
-  padding: 10px;
-  border-radius: 8px;
-  border: none;
-  outline: none;
-  font-size: 1rem;
-  text-align: center;
-}
-
-button {
-  background-color: red;
-  color: white;
-  border: none;
-  padding: 10px;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 1rem;
-}
-
-button:hover {
-  background-color: darkred;
 }
 
 .qr img {
@@ -1014,6 +967,55 @@ button:hover {
     margin-bottom: 6px;
     font-size: 16px;
   }
+}
+h1 {
+  display: flex;
+  color: white;
+  justify-content: center;
+  width: 100%;
+  letter-spacing: 2px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.btn-info {
+  background-color: #e30613;
+  border: none;
+  padding: 0.7rem 1.3rem;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-info:hover {
+  background-color: #a3050d;
+}
+
+button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: darkred;
+}
+
+input[type=email] {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

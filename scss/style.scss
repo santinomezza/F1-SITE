@@ -1,4 +1,3 @@
-$primary-color: blue;
 
 // COMPONENTES
 @import "components/body";
@@ -15,3 +14,8 @@ $primary-color: blue;
 
 // RESPONSIVE
 @import "responsive/responsive";
+
+//ELEMENTOS
+@import "elementos/titulos";
+@import "elementos/botones";
+@import "elementos/inputs";
