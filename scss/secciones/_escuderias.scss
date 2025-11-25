@@ -113,7 +113,9 @@
     background-repeat: no-repeat;
 }
 #auto-1 h2{
-    color: orange;
+    background: linear-gradient(80deg, #ffae00, #292727);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 50px;
     padding-bottom: 60px;
 }
@@ -124,7 +126,9 @@
     background-repeat: no-repeat;
 }
 #auto-2 h2{
-    color: rgb(13, 13, 122);
+    background: linear-gradient(90deg, #0000ff, #312f2f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     padding-bottom: 60px;
     
 }
@@ -135,7 +139,9 @@
     background-repeat: no-repeat;
 }
 #auto-3 h2{
-    color: red;
+    background: linear-gradient(90deg, #ff0000, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     padding-bottom: 60px;
 }
 #auto-4{
@@ -145,7 +151,9 @@
     background-repeat: no-repeat;
 }
 #auto-4 h2{
-    color: rgb(5, 227, 243);
+    background: linear-gradient(90deg, #04ffea, #363535);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 40px;
     padding-bottom: 80px;
 }
@@ -156,7 +164,9 @@
     background-repeat: no-repeat;
 }
 #auto-5 h2{
-    color: rgb(5, 94, 52);
+    background: linear-gradient(90deg, #05492d, #494646);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 40px;
     padding-bottom: 80px;
 }
@@ -167,7 +177,9 @@
     background-repeat: no-repeat;
 }
 #auto-6 h2{
-    color: blue;
+    background: linear-gradient(90deg, #0000ff, #464242);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     padding-bottom: 60px;
 }
 #auto-7{
@@ -177,7 +189,9 @@
     background-repeat: no-repeat;
 }
 #auto-7 h2{
-    color: rgb(255, 255, 255);
+    background: linear-gradient(90deg, #00a2ff, #252424);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 40px;
     padding-bottom: 80px;
 }
@@ -188,7 +202,9 @@
     background-repeat: no-repeat;
 }
 #auto-8 h2{
-    color: pink;
+    background: linear-gradient(90deg, #d85f97, #444242);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     padding-bottom: 60px;
 }
 #auto-9{
@@ -198,7 +214,9 @@
     background-repeat: no-repeat;
 }
 #auto-9 h2{
-    color: rgb(63, 250, 5);
+    background: linear-gradient(90deg, #11bd1f, #444242);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     padding-bottom: 60px;
 }
 #auto-10{
@@ -208,6 +226,8 @@
     background-repeat: no-repeat;
 }
 #auto-10 h2{
-    color: white;
+    background: linear-gradient(90deg, #ffffff, #575353);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     padding-bottom: 60px;
 }

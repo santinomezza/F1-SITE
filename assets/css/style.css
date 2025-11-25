@@ -20,7 +20,7 @@ body {
 
 .site-header {
   width: 100%;
-  background-color: #000;
+  background-color: black;
   border-bottom: 4px solid #e10600;
   padding: 12px 24px;
   display: flex;
@@ -368,7 +368,9 @@ form {
 }
 
 #auto-1 h2 {
-  color: orange;
+  background: linear-gradient(80deg, #ffae00, #292727);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 50px;
   padding-bottom: 60px;
 }
@@ -381,7 +383,9 @@ form {
 }
 
 #auto-2 h2 {
-  color: rgb(13, 13, 122);
+  background: linear-gradient(90deg, #0000ff, #312f2f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   padding-bottom: 60px;
 }
 
@@ -393,7 +397,9 @@ form {
 }
 
 #auto-3 h2 {
-  color: red;
+  background: linear-gradient(90deg, #ff0000, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   padding-bottom: 60px;
 }
 
@@ -405,7 +411,9 @@ form {
 }
 
 #auto-4 h2 {
-  color: rgb(5, 227, 243);
+  background: linear-gradient(90deg, #04ffea, #363535);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 40px;
   padding-bottom: 80px;
 }
@@ -418,7 +426,9 @@ form {
 }
 
 #auto-5 h2 {
-  color: rgb(5, 94, 52);
+  background: linear-gradient(90deg, #05492d, #494646);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 40px;
   padding-bottom: 80px;
 }
@@ -431,7 +441,9 @@ form {
 }
 
 #auto-6 h2 {
-  color: blue;
+  background: linear-gradient(90deg, #0000ff, #464242);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   padding-bottom: 60px;
 }
 
@@ -443,7 +455,9 @@ form {
 }
 
 #auto-7 h2 {
-  color: rgb(255, 255, 255);
+  background: linear-gradient(90deg, #00a2ff, #252424);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 40px;
   padding-bottom: 80px;
 }
@@ -456,7 +470,9 @@ form {
 }
 
 #auto-8 h2 {
-  color: pink;
+  background: linear-gradient(90deg, #d85f97, #444242);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   padding-bottom: 60px;
 }
 
@@ -468,7 +484,9 @@ form {
 }
 
 #auto-9 h2 {
-  color: rgb(63, 250, 5);
+  background: linear-gradient(90deg, #11bd1f, #444242);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   padding-bottom: 60px;
 }
 
@@ -480,7 +498,9 @@ form {
 }
 
 #auto-10 h2 {
-  color: white;
+  background: linear-gradient(90deg, #ffffff, #575353);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   padding-bottom: 60px;
 }
 
@@ -978,17 +998,18 @@ h1 {
   font-weight: bold;
 }
 
+.otras-novedades {
+  color: white;
+}
+
 .btn-info {
-  background-color: #e30613;
+  background: linear-gradient(90deg, #c20000, #ff1a1a);
+  color: white;
+  padding: 10px 20px;
   border: none;
-  padding: 0.7rem 1.3rem;
-  border-radius: 5px;
-  color: #fff;
-  font-weight: 600;
+  border-radius: 6px;
+  font-weight: bold;
   cursor: pointer;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  transition: background-color 0.3s ease;
 }
 
 .btn-info:hover {
@@ -996,13 +1017,13 @@ h1 {
 }
 
 button {
-  background-color: red;
+  background: linear-gradient(90deg, #c20000, #ff1a1a);
   color: white;
+  padding: 10px 20px;
   border: none;
-  padding: 10px;
-  border-radius: 8px;
+  border-radius: 6px;
+  font-weight: bold;
   cursor: pointer;
-  font-size: 1rem;
 }
 
 button:hover {
