@@ -1,7 +1,7 @@
 footer {
     text-align: center;
     padding: 20px;
-    border-top: 2px solid red;
+    border-top: 2px solid $secundary-color;
 }
 
 footer a {
@@ -11,5 +11,5 @@ footer a {
 }
 
 footer a:hover {
-    color: red;
+    color:$secundary-color;
 }

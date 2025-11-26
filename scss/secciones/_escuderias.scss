@@ -10,7 +10,7 @@
     text-align: center;
 }
 .grid-item-piloto-1{
-    background-color:  rgba(46, 44, 44, 0.479);
+    background-color:  $secundary-color;
     background-size: contain;
     background-repeat: no-repeat;
     margin: 10px;
@@ -18,11 +18,11 @@
     font-size: 30px;
     color: rgb(0, 0, 0);
     border-radius: 10px;
-    border: solid 3px black;
+    border: solid 3px $primary-color;
 }
 .grid-info-auto p{
     display: block;
-    background-color:  rgba(46, 44, 44, 0.479);
+    background-color:  $tertiary-color;
     border-radius: 10px;
     margin-top: 32%;
     color: rgb(255, 255, 255);
@@ -104,7 +104,7 @@
     margin: 10px;
     padding: 20px;
     color: rgba(255, 255, 255, 0.63);
-    background-color: rgba(46, 44, 44, 0.363);
+    background-color: $tertiary-color;
 }
 #auto-1{
     background-image: url(../img/2025mclarencarright-removebg-preview.png);

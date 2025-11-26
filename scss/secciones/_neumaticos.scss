@@ -14,12 +14,12 @@
     border-radius: 15px;
     width: 85%;
     padding: 20px 30px;
-    border-left: 4px solid rgb(255, 0, 0);
+    border-left: 4px solid $secundary-color;
     padding-left: 3%;
-    border-right: 4px solid red;
+    border-right: 4px solid $secundary-color;
     padding-right: 3%;
     border-radius: 20px;
-    background-color: rgba(46, 44, 44, 0.479);
+    background-color: $tertiary-color
 }
 
 .card-neumatico img {

@@ -8,7 +8,7 @@
     gap: 3rem;
     align-items: center;
     padding: 0 1rem; 
-    background-color: rgba(47, 44, 44, 0.465);
+    background-color: $tertiary-color;
     border-radius: 15px;    
 }
 section{
@@ -18,20 +18,20 @@ section{
     gap: 3rem;
     align-items: center;
     padding: 0 1rem; 
-    background-color: rgba(47, 44, 44, 0.465);
+    background-color:$tertiary-color;
     border-radius: 15px;  
 }
 .card-inicio:hover{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    transform: scale(1.08);           /* Se agranda */
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); /* Glow opcional */
+    transform: scale(1.08);          
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); 
     z-index: 2;
 }
 .info {
     flex: 1;
 }
 .info h2 {
-    color: #bd0a0a;
+    color: $secundary-color;
     font-size: 2rem;
     font-weight: 900;
     text-decoration: underline;
@@ -41,7 +41,7 @@ section{
     color: #fff;
     font-size: 1.4rem;
     font-weight: 700;
-    border-left: 4px solid #bd0a0a;
+    border-left: 4px solid $secundary-color;
     padding-left: 0.6rem;
     margin-bottom: 1rem;
 }
@@ -54,7 +54,7 @@ section{
     flex: 1;
     max-width: 600px;
     border-radius: 15px;
-    box-shadow: 0 0 15px 3px #b21414;
+    box-shadow: 0 0 15px 3px $secundary-color;
 }
 .circuit-img img {
     width: 100%;

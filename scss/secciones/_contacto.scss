@@ -9,7 +9,7 @@
     height: 300px;          
     margin: 30px auto; 
     padding: 25px;
-    background: rgba(46, 44, 44, 0.479);
+    background: $tertiary-color;
     border: 1px solid red;
     border-radius: 15px;
     box-shadow: 0 0 10px red;
@@ -17,7 +17,7 @@
 
 .cuadro h2{
     color: rgb(255, 255, 255);
-    border-left: 5px solid red;
+    border-left: 5px solid $secundary-color;
     padding-left: 5px;
 }
 .cuadro p{

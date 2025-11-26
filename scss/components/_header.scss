@@ -1,8 +1,8 @@
 
 .site-header {
     width: 100%;
-    background-color: black;
-    border-bottom: 4px solid #e10600;
+    background-color: $primary-color;
+    border-bottom: 4px solid $secundary-color;
     padding: 12px 24px;
     display: flex;
     align-items: center;
@@ -47,5 +47,5 @@
 }
 
 .menu li a:hover {
-    color: #e10600;
+    color: $secundary-color;
 }

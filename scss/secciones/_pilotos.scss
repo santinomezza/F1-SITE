@@ -9,15 +9,15 @@
 }
 
 .grid-item {
-    background-color: rgba(46, 44, 44, 0.479);
+    background-color: $tertiary-color;
     background-size: contain;
     background-repeat: no-repeat;
     margin: 10px;
     padding: 10px;
     font-size: 30px;
-    color: rgb(0, 0, 0);
+    color: $primary-color;
     border-radius: 10px;
-    border: solid 3px rgb(0, 0, 0);
+    border: solid 3px $primary-color;
 }
 .grid-item:hover{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -108,7 +108,7 @@
 
 .grid-pilotos h2 {
     font-size: 42px;
-    text-decoration: overline rgb(0, 0, 0);
+    text-decoration: overline $primary-color;
 color: white;
 }
 
