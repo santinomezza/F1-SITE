@@ -217,12 +217,6 @@ main {
   margin-bottom: 12px;
 }
 
-.titulo-circuitos {
-  font-size: 3.2rem;
-  margin-bottom: 60px;
-  letter-spacing: 4px;
-}
-
 /*CONTACTO*/
 .cuadro {
   display: flex;
