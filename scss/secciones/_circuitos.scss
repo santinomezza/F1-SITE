@@ -2,38 +2,61 @@
 
                 /*CIRCUITOS*/
 
+#circuitos {
+    max-width: 95%;          
+    margin: 0 auto;
+    padding: 20px 0 80px;
+    background-color: transparent;
+}
+
 .grid-item-circuitos {
-    background-color:$tertiary-color;
-    padding: 20px;
-    border-radius: 15px;
-    margin-bottom: 20px;
+    background: $tertiary-color;
+    padding: 35px 30px;     
+    border-radius: 20px;
+    height: 100%;
 }
+
 .grid-item-circuitos h2 {
-    color: white;
-    margin-bottom: 15px;
+    font-size: 2rem;         
+    text-align: center;
+    margin-bottom: 22px;
+    padding-left: 8px;
+    color: #ffffff;
     text-decoration: underline;
-    font-size: 35px;
-    padding-left: 20px;
 }
+
 .circuitos-content {
     display: flex;
-    gap: 20%;
-    align-items:center;;
+    flex-direction: row;
+    align-items: center;
+    gap: 35px;           
 }
+
 .circuitos-content img {
-    width: 40%;
-    border-radius: 10px;
-    padding-left: 30px;
+    width: 60%;              
+    max-width: 450px;       
+    border-radius: 12px;
+    object-fit: contain;
 }
+
 .circuitos-content ul {
+    width: 100%;
     list-style: none;
-    color: white;
-    font-size: 20px;
-    border-left: 4px solid $secundary-color;
-    padding-left: 3%;
-    border-right: 4px solid $secundary-color;
-    padding-right: 3%;
+    padding: 18px 24px;    
+    font-size: 1.15rem;    
+    color: #fff;
+    border-left: 4px solid #e10600;
+    border-right: 4px solid #ff0800;
+    border-radius: 10px;
+    line-height: 1.50;       
 }
+
 .circuitos-content ul li {
-    margin-bottom: 8px;
+    margin-bottom: 12px;    
+}
+
+.titulo-circuitos {
+    font-size: 3.2rem;
+    margin-bottom: 60px;
+    letter-spacing: 4px;
 }

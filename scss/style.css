@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -164,59 +165,66 @@ main {
 }
 
 /*CIRCUITOS*/
+/* ==== MAS ANCHO GENERAL ==== */
 #circuitos {
-  max-width: 95%;
+  max-width: 95%; /* antes ocupaba menos — ahora +15% */
   margin: 0 auto;
   padding: 20px 0 80px;
-  background-color: transparent;
 }
 
+/* ==== TARJETAS MÁS GRANDES Y ESPACIADAS ==== */
 .grid-item-circuitos {
-  background: rgba(46, 44, 44, 0.479);
-  padding: 35px 30px;
+  background: #111827;
+  padding: 35px 30px; /* MÁS PADDING */
   border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
   height: 100%;
 }
 
+/* ==== TÍTULO DEL CIRCUITO ==== */
 .grid-item-circuitos h2 {
-  font-size: 2rem;
-  text-align: center;
+  font-size: 2rem; /* más grande */
   margin-bottom: 22px;
   padding-left: 8px;
-  color: #ffffff;
+  color: #e30808;
   text-decoration: underline;
 }
 
+/* ==== CONTENEDOR INTERNO ==== */
 .circuitos-content {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 35px;
+  gap: 35px; /* MÁS SEPARACIÓN ENTRE IMG Y LISTA */
 }
 
+/* ==== IMÁGENES MÁS GRANDES ==== */
 .circuitos-content img {
-  width: 60%;
-  max-width: 450px;
+  width: 55%; /* ANTES 40% */
+  max-width: 330px; /* ANTES ~230px → ahora mucho más grande */
   border-radius: 12px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
+/* ==== LISTA MÁS SUAVE Y ESPACIADA ==== */
 .circuitos-content ul {
   width: 100%;
   list-style: none;
-  padding: 18px 24px;
-  font-size: 1.15rem;
+  padding: 18px 24px; /* más aire */
+  font-size: 1.15rem; /* ligeramente más grande */
   color: #fff;
   border-left: 4px solid #e10600;
   border-right: 4px solid #ff0800;
   border-radius: 10px;
-  line-height: 1.5;
+  line-height: 1.55; /* texto más fácil de leer */
 }
 
 .circuitos-content ul li {
-  margin-bottom: 12px;
+  margin-bottom: 12px; /* más aire entre líneas */
 }
 
+/* ==== TÍTULO PRINCIPAL ==== */
 .titulo-circuitos {
   font-size: 3.2rem;
   margin-bottom: 60px;
@@ -754,7 +762,8 @@ form {
 
 .grid-pilotos h2 {
   font-size: 42px;
-  text-decoration: overline black;
+  -webkit-text-decoration: overline black;
+          text-decoration: overline black;
   color: white;
 }
 
@@ -1436,6 +1445,4 @@ input[type=email] {
   100% {
     transform: rotate(360deg);
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
