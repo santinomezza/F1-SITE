@@ -1175,7 +1175,6 @@ input[type=email] {
     margin: 0 auto;
     padding: 1rem;
   }
-  /* Cada tarjeta en columna */
   .card-inicio {
     flex-direction: column;
     align-items: center;
@@ -1184,14 +1183,12 @@ input[type=email] {
     padding: 1.5rem 1rem;
     border-radius: 12px;
   }
-  /* H2 arriba, centrado */
   .card-inicio .info h2 {
     width: 100%;
     text-align: center;
     font-size: 1.6rem;
     margin-bottom: 1rem;
   }
-  /* Contenido de texto */
   .card-inicio .info {
     width: 100%;
     text-align: left;
@@ -1210,7 +1207,6 @@ input[type=email] {
     display: block;
     text-align: center;
   }
-  /* Imagen al medio, ocupando el ancho */
   .card-inicio .circuit-img {
     width: 100%;
     max-width: 340px;

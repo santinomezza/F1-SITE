@@ -4,12 +4,10 @@
     .site-header {
         padding: 10px 15px;
     }
-
     .menu-icon {
         display: block;
         margin-left: auto;
     }
-
     .site-nav {
         display: none;
         position: absolute;
@@ -20,11 +18,9 @@
         border-top: 1px solid #444;
         z-index: 10;
     }
-
     .menu-toggle:checked + .menu-icon + .site-nav {
         display: block;
     }
-
     .menu {
         flex-direction: column;
         align-items: center;
@@ -38,68 +34,67 @@
         padding: 4px 0;
         font-size: 16px;
     }
-  /* INDEX */
-
-  .main-inicio {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 1rem;
-  }
-
-  /* Cada tarjeta en columna */
-  .card-inicio {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    margin: 1.5rem auto;
-    padding: 1.5rem 1rem;
-    border-radius: 12px;
-  }
-
-  /* H2 arriba, centrado */
-  .card-inicio .info h2 {
-    width: 100%;
-    text-align: center;
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
-  }
-
-  /* Contenido de texto */
-  .card-inicio .info {
-    width: 100%;
-    text-align: left;
-  }
-
-  .card-inicio .info h3 {
-    font-size: 1.3rem;
-    margin-bottom: .5rem;
-  }
-
-  .card-inicio .info p {
-    font-size: .95rem;
-    line-height: 1.5;
-    margin-bottom: 1rem;
-  }
-
-  .card-inicio .btn-info {
-    width: 100%;
-    display: block;
-    text-align: center;
-  }
-
-  /* Imagen al medio, ocupando el ancho */
-  .card-inicio .circuit-img {
-    width: 100%;
-    max-width: 340px;
-  }
-
-  .card-inicio .circuit-img img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 12px;
-  }
-  /* ESCUDERIAS */
+    
+      /* INDEX */
+    
+    .main-inicio {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+    
+    .card-inicio {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin: 1.5rem auto;
+        padding: 1.5rem 1rem;
+        border-radius: 12px;
+    }
+    
+    .card-inicio .info h2 {
+        width: 100%;
+        text-align: center;
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+    
+    .card-inicio .info {
+        width: 100%;
+        text-align: left;
+    }
+    
+    .card-inicio .info h3 {
+        font-size: 1.3rem;
+        margin-bottom: .5rem;
+    }
+    
+    .card-inicio .info p {
+        font-size: .95rem;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+    }
+    
+    .card-inicio .btn-info {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    
+    .card-inicio .circuit-img {
+        width: 100%;
+        max-width: 340px;
+    }
+    
+    .card-inicio .circuit-img img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 12px;
+    }
+    
+      /* ESCUDERIAS */
+    
     .grid-escuderias {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(10);
@@ -130,7 +125,8 @@
         margin: 0;
         text-align: center;
     }
-  /*CIRCUITOS*/
+        /*CIRCUITOS*/
+    
     .grid-item-circuitos {
         padding: 15px;
         margin-bottom: 20px;
@@ -162,14 +158,13 @@
         margin-bottom: 6px;
         font-size: 16px;
     }
-
-/*PILOTOS*/
-
+    
+    /*PILOTOS*/
+    
     .grid-pilotos {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
     }
-
     .grid-item,
     .grid-item-info-1,
     .grid-item-info-2,
@@ -227,14 +222,13 @@
     .grid-item-info-20 h2{
         font-size: 28px;
     }
-
-
-    /*NEUMATICOS*/
+    
+        /*NEUMATICOS*/
+    
     .container-neumaticos {
         padding: 20px 10px;
         gap: 15px;
     }
-
     .card-neumatico {
         flex-direction: column;
         align-items: center;
@@ -243,48 +237,41 @@
         padding: 15px 12px;
         border-radius: 16px;
     }
-
     .card-neumatico img {
         width: 60%;
         max-width: 220px;
         height: auto;
         margin: 0 0 10px 0;
     }
-
     .info-neumaticos {
         width: 90%;
         text-align: start;
     }
-
     .info-neumaticos h2 {
         font-size: 24px;
         margin-bottom: 10px;
         padding-left: 0;    
         text-align: center;  
     }
-
     .info-neumaticos ul {
         list-style: none;
         padding-left: 5%;
         margin: 0;
         font-size: 18px;
     }
-
     .info-neumaticos li {
         font-size: 18px;
         line-height: 1.4;
     }
-
     .info-neumaticos ul li strong {
         padding-right: 5px;
     }
-
     main:hover{
         display: none;
     }
-
-    /*CONTACTO*/
-
+    
+        /*CONTACTO*/
+    
     .cuadro {
         width: 80%;
         margin: 10px auto 20px auto;
@@ -295,7 +282,6 @@
         gap: 8px;
         height: auto;
     }
-
     .cuadro p {
         font-size: 16px;
         margin: 0;
@@ -303,14 +289,12 @@
     .cuadro.suscripcion p {
         text-align: center;
     }
-
     .cuadro.suscripcion form {
         margin-top: 10px;
         display: flex;
         flex-direction: column;
         gap: 10px;
     }
-
     .cuadro.suscripcion input[type="email"],
     .cuadro.suscripcion button {
         width: 100%;
@@ -319,23 +303,18 @@
         border: none;
         font-size: 16px;
     }
-
     .cuadro.suscripcion button {
         font-weight: bold;
         cursor: pointer;
     }
-
     .cuadro.qr {
         align-items: center;
         text-align: center;
     }
-
     .cuadro.qr img {
         width: 70%;
         max-width: 220px;
         height: auto;
         margin-top: 10px;
     }
-
-
 }
