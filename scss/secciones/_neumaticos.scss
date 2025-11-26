@@ -1,46 +1,83 @@
-
-                    /*NEUMATICOS*/
-
-.container-neumaticos{
+/*NEUMATICOS*/
+.container-neumaticos {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
     padding: 40px 0;
+    background: none;
 }
-.card-neumatico{
+
+.card-neumatico {
     display: flex;
     align-items: center;
     border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 80%;
+    width: 85%;
     padding: 20px 30px;
+    border-left: 4px solid rgb(255, 0, 0);
+    padding-left: 3%;
+    border-right: 4px solid red;
+    padding-right: 3%;
+    border-radius: 20px;
+    background-color: rgba(46, 44, 44, 0.479);
 }
-.card img{
-    width: 150px;
-    height: auto;
+
+.card-neumatico img {
+    width: 350px;
+    height: 350px;
     margin-right: 40px;
+    animation: girarRueda 3s linear infinite;
+    transition: filter 0.2s ease, transform 0.2s ease;
 }
-.info-neumaticos h2{
-    color: white;
+.card-neumatico img:hover {
+    animation-duration: 0.4s; 
+    filter: blur(1px);           
+    transform: scale(1.0);      
+}
+.info-neumaticos h2 {
     margin-bottom: 10px;
     font-size: 40px;
     padding-left: 25%;
     text-decoration: underline;
+
 }
-.info-neumaticos ul{
+.neumatico-blanco{ 
+    color: rgb(255, 255, 255);
+}
+.neumatico-amarillo{
+    color: rgb(228, 205, 5);
+}
+.neumatico-rojo{
+    color: red;
+}
+.neumatico-verde{
+    color: #11bd1f;
+}
+.neumatico-azul{
+    color: #1d1d8d;
+}
+
+.info-neumaticos ul {
     list-style: none;
     font-size: 25px;
-    padding-left:25%;
+    padding-left: 25%;
     margin: 0;
-    color: white;
+    color: rgb(255, 251, 251);
 }
-.info-neumaticos li{
+
+.info-neumaticos li {
     font-size: 25px;
 }
-.info-neumaticos ul li strong{
+
+.info-neumaticos ul li strong {
     font-weight: bold;
     text-decoration: underline;
     padding-right: 15px;
 }
 
+
+
+@keyframes girarRueda {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

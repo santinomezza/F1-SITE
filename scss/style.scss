@@ -12,10 +12,17 @@ $primary-color: rgba(46, 44, 44, 0.479);
 @import "secciones/neumaticos";
 @import "secciones/pilotos";
 
-// RESPONSIVE
-@import "responsive/responsive";
 
 //ELEMENTOS
 @import "elementos/titulos";
 @import "elementos/botones";
 @import "elementos/inputs";
+
+// RESPONSIVE
+@import "responsive/responsive";
+
+
+@keyframes girarRueda {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

@@ -1,7 +1,7 @@
 
                     /* INDEX */
 
-main {
+.main-inicio {
     max-width: 1200px;
     margin: 3rem auto;
     display: flex;
@@ -10,6 +10,22 @@ main {
     padding: 0 1rem; 
     background-color: rgba(47, 44, 44, 0.465);
     border-radius: 15px;    
+}
+section{
+        max-width: 1200px;
+    margin: 3rem auto;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    padding: 0 1rem; 
+    background-color: rgba(47, 44, 44, 0.465);
+    border-radius: 15px;  
+}
+.card-inicio:hover{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(1.08);           /* Se agranda */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); /* Glow opcional */
+    z-index: 2;
 }
 .info {
     flex: 1;

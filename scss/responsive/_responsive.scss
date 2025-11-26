@@ -1,37 +1,30 @@
 
-
-
 /* ---------- VISTA MOBILE ---------- */
-        @media (max-width: 480px) {
-
+@media (max-width: 480px) {
     .site-header {
         padding: 10px 15px;
     }
 
-  /* mostrar el icono y mandarlo a la derecha */
     .menu-icon {
         display: block;
         margin-left: auto;
     }
 
-  /* ocultar el menú por defecto */
     .site-nav {
         display: none;
         position: absolute;
-        top: 100%;              /* justo debajo del header */
+        top: 100%;
         left: 0;
         width: 100%;
-        background-color: #0f0f0ff2;
+        background-color: rgba(15, 15, 15, 0.9490196078);
         border-top: 1px solid #444;
         z-index: 10;
     }
 
-  /* cuando el checkbox está chequeado → mostrar nav */
     .menu-toggle:checked + .menu-icon + .site-nav {
         display: block;
     }
 
-  /* menú en columna, centrado */
     .menu {
         flex-direction: column;
         align-items: center;
@@ -39,114 +32,286 @@
         padding: 12px 0 16px;
         border-bottom: 3px solid red;
     }
-
     .menu li a {
         width: 100%;
         text-align: center;
         padding: 4px 0;
         font-size: 16px;
     }
-
-/* INDEX */
-            main{
-                display: flex;
-                flex-direction: column;
-                text-align: center;
-                align-items: center;
-                padding: 15px;
-                width: 100%;
-                background-color: rgba(47, 44, 44, 0.465);
-                border-radius: 15px;
-            }
-            main h2{
-                width: 100%;
-                font-size: 17px;
-                margin-bottom: 10px;
-            }
-            main img{
-                width: 90%;
-                max-width: 390px;
-                max-height: 350px;
-                border-radius: 10px;
-                margin-bottom: 15px;
-            }
-            main h3{
-                font-size: 17px;
-                margin-bottom: 7px;
-            }
-            main p{
-                font-size: 15px;
-                margin-bottom: 15px;
-                padding: 0 7px;
-            }
-            main button .btn-info{
-                display: block;
-                margin: 0 auto;
-                font-size: 15px;
-            }
-
-
-/* ESCUDERIAS */
-            .grid-escuderias{
-                grid-template-columns: 1fr;
-                grid-template-rows: repeat(10,); 
-                gap: 18px;
-                justify-items: center;
-                padding: 10px 12px;
-                box-sizing: border-box;
-            }
-            .grid-item-piloto-1,
-            .grid-item-piloto-2{
-                display: none;
-            }
+  /* INDEX */
+    main {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 15px;
+        width: 100%;
+        background-color: rgba(47, 44, 44, 0.465);
+        border-radius: 15px;
+    }
+    main h2 {
+        width: 100%;
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    main img {
+        width: 90%;
+        max-width: 390px;
+        max-height: 350px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+    main h3 {
+        font-size: 17px;
+        margin-bottom: 7px;
+    }
+    main p {
+        font-size: 15px;
+        margin-bottom: 15px;
+        padding: 0 7px;
+    }
+    main button .btn-info {
+        display: block;
+        margin: 0 auto;
+        font-size: 15px;
+    }
+  /* ESCUDERIAS */
+    .grid-escuderias {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(10);
+        gap: 18px;
+        justify-items: center;
+        padding: 10px 12px;
+        box-sizing: border-box;
+    }
+    .grid-item-piloto-1,
+    .grid-item-piloto-2 {
+        display: none;
+    }
     .grid-info-auto {
-    position: relative;   /* Necesario para posicionar el p dentro */
-    height: auto;         /* Asegura que tome altura completa del contenido */
-    padding-bottom: 50px; /* Espacio para que el p no quede encima del auto */
+        position: relative;   
+        height: 500px;
+        width: 400px;       
+        padding-bottom: 50px;
     }
-            .grid-info-auto h2{
-                text-align: center;
-                font-size: 35px;
-            }
-            .grid-info-auto p{
-    position: absolute;
-    bottom: 0;            /* Pegado al borde inferior */
-    left: 0;
-    width: 100%;
-    margin: 0;
-    text-align: center;
-            }
-
-
-/*CIRCUITOS*/
-
-        .grid-item-circuitos {
-            padding: 15px;
-            margin-bottom: 20px;
-            text-align: center; 
-        }
-        .grid-item-circuitos h2 {
-            font-size: 22px;
-            margin-bottom: 10px;
-        }
-        .circuitos-content {
-            flex-direction: column;
-            align-items: center;
-            gap: 10px;
-        }
-        .circuitos-content img {
-            width: 80%;   
-            max-width: 300px;
-        }
-        .circuitos-content ul {
-            padding: 0;
-            margin: 0;
-            width: 100%;
-            text-align: left; 
-        }
-        .circuitos-content ul li {
-            margin-bottom: 6px;
-            font-size: 16px;
-        }
+    .grid-info-auto h2 {
+        text-align: center;
+        font-size: 35px;
+    }
+    .grid-info-auto p {
+        position: absolute;
+        bottom: 0;         
+        left: 0;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+  /*CIRCUITOS*/
+    .grid-item-circuitos {
+        padding: 15px;
+        margin-bottom: 20px;
+        text-align: center;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .grid-item-circuitos h2 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    .circuitos-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .circuitos-content img {
+        width: 85%;
+        max-width: 400px;
+    }
+    .circuitos-content ul {
+        padding: 0;
+        margin: 0;
+        width: 90%;
+        height: 290px;
+        text-align: left;
+    }
+    .circuitos-content ul li {
+        margin-bottom: 6px;
+        font-size: 16px;
     }
 
+/*PILOTOS*/
+
+    .grid-pilotos {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .grid-item,
+    .grid-item-info-1,
+    .grid-item-info-2,
+    .grid-item-info-3,
+    .grid-item-info-4,
+    .grid-item-info-5,
+    .grid-item-info-6,
+    .grid-item-info-7,
+    .grid-item-info-8,
+    .grid-item-info-9,
+    .grid-item-info-10, 
+    .grid-item-info-11,
+    .grid-item-info-12,
+    .grid-item-info-13,
+    .grid-item-info-14,
+    .grid-item-info-15,
+    .grid-item-info-16,
+    .grid-item-info-17,
+    .grid-item-info-18,
+    .grid-item-info-19,
+    .grid-item-info-20 {
+        width: 90%;
+        margin: 0 auto 20px auto;
+    }
+    .grid-item {
+        height: 450px;
+        background-size:cover;
+        background-position: center;
+    }
+    .grid-item-info-1-2 {
+        margin-top: -5px;       
+        padding: 20px;
+        font-size: 20px;
+        width: 90%;
+    }
+    .grid-item-info-1 h2,
+    .grid-item-info-2 h2,
+    .grid-item-info-3 h2, 
+    .grid-item-info-4 h2, 
+    .grid-item-info-5 h2, 
+    .grid-item-info-6 h2, 
+    .grid-item-info-7 h2, 
+    .grid-item-info-8 h2, 
+    .grid-item-info-9 h2, 
+    .grid-item-info-10 h2, 
+    .grid-item-info-11 h2,
+    .grid-item-info-12 h2,
+    .grid-item-info-13 h2, 
+    .grid-item-info-14 h2, 
+    .grid-item-info-15 h2, 
+    .grid-item-info-16 h2, 
+    .grid-item-info-17 h2, 
+    .grid-item-info-18 h2, 
+    .grid-item-info-19 h2, 
+    .grid-item-info-20 h2{
+        font-size: 28px;
+    }
+
+
+    /*NEUMATICOS*/
+    .container-neumaticos {
+        padding: 20px 10px;
+        gap: 15px;
+    }
+
+    .card-neumatico {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto 10px auto;
+        padding: 15px 12px;
+        border-radius: 16px;
+    }
+
+    .card-neumatico img {
+        width: 60%;
+        max-width: 220px;
+        height: auto;
+        margin: 0 0 10px 0;
+    }
+
+    .info-neumaticos {
+        width: 90%;
+        text-align: start;
+    }
+
+    .info-neumaticos h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        padding-left: 0;    
+        text-align: center;  
+    }
+
+    .info-neumaticos ul {
+        list-style: none;
+        padding-left: 5%;
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .info-neumaticos li {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    .info-neumaticos ul li strong {
+        padding-right: 5px;
+    }
+
+    main:hover{
+        display: none;
+    }
+
+    /*CONTACTO*/
+
+    .cuadro {
+        width: 80%;
+        margin: 10px auto 20px auto;
+        padding: 20px 15px;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        height: auto;
+    }
+
+    .cuadro p {
+        font-size: 16px;
+        margin: 0;
+    }
+    .cuadro.suscripcion p {
+        text-align: center;
+    }
+
+    .cuadro.suscripcion form {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cuadro.suscripcion input[type="email"],
+    .cuadro.suscripcion button {
+        width: 100%;
+        padding: 10px 12px;
+        border-radius: 8px;
+        border: none;
+        font-size: 16px;
+    }
+
+    .cuadro.suscripcion button {
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .cuadro.qr {
+        align-items: center;
+        text-align: center;
+    }
+
+    .cuadro.qr img {
+        width: 70%;
+        max-width: 220px;
+        height: auto;
+        margin-top: 10px;
+    }
+
+
+}
