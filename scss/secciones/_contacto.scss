@@ -2,24 +2,21 @@
                     /*CONTACTO*/
 
 .cuadro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 40%; 
-    height: 300px;          
-    margin: 30px auto; 
-    padding: 25px;
-    background: $tertiary-color;
+@include flex-exact(column, 0, center);
+    width: 40%;
+    height: 300px;
+    margin: 30px auto;
+@include card-box($tertiary-color, 25px, 15px);
     border: 1px solid red;
-    border-radius: 15px;
     box-shadow: 0 0 10px red;
 }
 
-.cuadro h2{
-    color: rgb(255, 255, 255);
-    border-left: 5px solid $secundary-color;
-    padding-left: 5px;
+.cuadro h2 {
+    @extend .titulo-subrayado;
+    @include left-border($secondary-color, 5px);
+    color: white;
 }
+
 .cuadro p{
     color: white;
     margin: auto;
@@ -30,9 +27,7 @@
     color: white;
 }
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+@include flex-exact(column, 10px, stretch);
 }
 .qr img {
     width: 150px;

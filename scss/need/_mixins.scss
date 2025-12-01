@@ -1,0 +1,40 @@
+
+@mixin flex-exact($direction, $gap, $align) {
+  display: flex;
+  flex-direction: $direction;
+  gap: $gap;
+  align-items: $align;
+}
+
+@mixin card-box($bg, $radius, $padding) {
+  background: $bg;
+  border-radius: $radius;
+  padding: $padding;
+} 
+
+@mixin left-border($color, $size) {
+  border-left: $size solid $color;
+  padding-left: 5px;
+}
+
+@mixin button-base($from, $to) {
+  background: linear-gradient(90deg, $from, $to);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+@mixin bg-radius($bg, $radius) {
+  background-color: $bg;
+  border-radius: $radius;
+}
+@mixin piloto-card($margin, $radius) {
+  margin: $margin;
+  border-radius: $radius;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

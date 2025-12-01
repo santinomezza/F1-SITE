@@ -10,34 +10,37 @@
     text-align: center;
 }
 .grid-item-piloto-1{
-    background-color:  $secundary-color;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin: 10px;
+@include piloto-card(10px, 10px);
+    background-color: $secondary-color;
     padding: 10px;
     font-size: 30px;
     color: rgb(0, 0, 0);
-    border-radius: 10px;
     border: solid 3px $primary-color;
 }
 .grid-info-auto p{
     display: block;
-    background-color:  $tertiary-color;
-    border-radius: 10px;
+@include bg-radius($tertiary-color, 10px);
     margin-top: 32%;
     color: rgb(255, 255, 255);
     font-size: 20px;
-    
 }
+
 .grid-info-auto h2{
-    font-size: 45px;
-    text-decoration: overline;
+@include piloto-card(10px, 10px);
+    @extend .titulo-subrayado;
 }
+
 .grid-item-piloto-2{
     border-radius: 10px;
     margin: 10px;   
     background-size: contain;
     background-repeat: no-repeat;
+}
+.grid-info-auto {
+@include bg-radius($tertiary-color, 10px);
+    margin: 10px;
+    padding: 20px;
+    color: rgba(255, 255, 255, 0.63);
 }
 #grid-escuderias-1{
         background-image: url(../img/LandoNorris\ _3.jpeg );
@@ -99,13 +102,6 @@
     background-image: url(../img/OliverBearman.jpeg);
 }
 
-.grid-info-auto {
-    border-radius: 10px;
-    margin: 10px;
-    padding: 20px;
-    color: rgba(255, 255, 255, 0.63);
-    background-color: $tertiary-color;
-}
 #auto-1{
     background-image: url(../img/2025mclarencarright-removebg-preview.png);
     background-size: contain;

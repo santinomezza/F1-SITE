@@ -10,26 +10,18 @@
 }
 
 .grid-item-circuitos {
-    background: $tertiary-color;
-    padding: 35px 30px;     
-    border-radius: 20px;
+    @include card-box($tertiary-color, 35px 30px, 20px);
     height: 100%;
 }
 
 .grid-item-circuitos h2 {
-    font-size: 2rem;         
-    text-align: center;
-    margin-bottom: 22px;
-    padding-left: 8px;
-    color: #ffffff;
-    text-decoration: underline;
+    @extend .titulo-subrayado;
+    color: #fff;
 }
 
+
 .circuitos-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 35px;           
+    @include flex-exact(row, 35px, center);        
 }
 
 .circuitos-content img {

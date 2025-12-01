@@ -1,7 +1,13 @@
-$primary-color: black;
-$secundary-color:rgb(194, 9, 9);
-$tertiary-color: rgba(46, 44, 44, 0.479);
-// COMPONENTES
+
+@import "need/variables";
+
+// 2) Luego mixins (usan variables)
+@import "need/mixins";
+
+// 3) Luego placeholders (pueden usar mixins y variables)
+@import "need/extend";
+
+
 @import "components/body";
 @import "components/header";
 @import "components/footer";
@@ -23,8 +29,3 @@ $tertiary-color: rgba(46, 44, 44, 0.479);
 // RESPONSIVE
 @import "responsive/responsive";
 
-
-@keyframes girarRueda {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}

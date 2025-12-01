@@ -9,23 +9,35 @@
 }
 
 .grid-item {
+@include piloto-card(10px, 10px);
     background-color: $tertiary-color;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin: 10px;
     padding: 10px;
     font-size: 30px;
     color: $primary-color;
-    border-radius: 10px;
     border: solid 3px $primary-color;
 }
+
 .grid-item:hover{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     transform: scale(1.05); 
     box-shadow: 0 0 20px rgba(250, 250, 250, 0.609); 
     z-index: 2;
 }
+.grid-pilotos h2 {
+    @extend .titulo-subrayado-grande;
+    color: white;
+}
 
+.grid-pilotos ul {
+    margin-top: 10px;
+    list-style: none;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, rgba(46, 44, 44, 0.305), rgba(46, 44, 44, 0.068), rgba(46, 44, 44, 0.305));
+    position: relative;
+    padding: 15px;
+}
 #grid-1 {
     background-image: url(../img/LandoNorris\ _3.jpeg);
 }
@@ -104,23 +116,6 @@
 
 #grid-20 {
     background-image: url(../img/FrancoColapinto.jpeg);
-}
-
-.grid-pilotos h2 {
-    font-size: 42px;
-    text-decoration: overline $primary-color;
-color: white;
-}
-
-.grid-pilotos ul {
-    margin-top: 10px;
-    list-style: none;
-    color: white;
-    font-size: 20px;
-    border-radius: 10px;
-    background: linear-gradient(to bottom, rgba(46, 44, 44, 0.305), rgba(46, 44, 44, 0.068), rgba(46, 44, 44, 0.305));
-    position: relative;
-    padding: 15px;
 }
 
 .grid-item-info-1 {
