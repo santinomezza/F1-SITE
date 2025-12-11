@@ -23,6 +23,7 @@
 }
 
 body {
+  background-color: rgb(77, 9, 9);
   background-image: url("../img/FONDOSILUETA.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1178,44 +1179,52 @@ input[type=email] {
     padding: 1rem;
   }
   .card-inicio {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
-    margin: 1.5rem auto;
-    padding: 1.5rem 1rem;
-    border-radius: 12px;
+    gap: 1.2rem;
+    padding: 1rem;
   }
   .card-inicio .info h2 {
+    order: -5;
+    font-size: 1.3rem;
+    text-align: left;
     width: 100%;
-    text-align: center;
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
   }
   .card-inicio .info {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    text-align: left;
   }
   .card-inicio .info h3 {
-    font-size: 1.3rem;
+    order: -4;
+    font-size: 1.1rem;
+    width: 100%;
     margin-bottom: 0.5rem;
+    text-align: left;
   }
   .card-inicio .info p {
-    font-size: 0.95rem;
+    order: -2;
+    font-size: 1rem;
     line-height: 1.5;
-    margin-bottom: 1rem;
+    text-align: left;
   }
   .card-inicio .btn-info {
+    order: -1;
     width: 100%;
-    display: block;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
   }
   .card-inicio .circuit-img {
+    order: -3;
     width: 100%;
-    max-width: 340px;
+    max-width: 380px;
+    margin: 0 auto;
   }
   .card-inicio .circuit-img img {
     width: 100%;
-    height: auto;
+    height: 400px;
     display: block;
     border-radius: 12px;
   }
@@ -1385,9 +1394,6 @@ input[type=email] {
   }
   .info-neumaticos ul li strong {
     padding-right: 5px;
-  }
-  main:hover {
-    display: none;
   }
   /*CONTACTO*/
   .cuadro {

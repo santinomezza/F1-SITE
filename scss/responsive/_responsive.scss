@@ -44,53 +44,62 @@
     }
     
     .card-inicio {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-        margin: 1.5rem auto;
-        padding: 1.5rem 1rem;
-        border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 1rem;
     }
     
     .card-inicio .info h2 {
-        width: 100%;
-        text-align: center;
-        font-size: 1.6rem;
-        margin-bottom: 1rem;
+    order: -5;
+    font-size: 1.3rem;
+    text-align: left;
+    width: 100%;
     }
     
     .card-inicio .info {
-        width: 100%;
-        text-align: left;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     }
+
     
     .card-inicio .info h3 {
-        font-size: 1.3rem;
-        margin-bottom: .5rem;
-    }
+    order: -4;
+    font-size: 1.1rem;
+    width: 100%;
+    margin-bottom: .5rem;
+    text-align: left;
+}
     
     .card-inicio .info p {
-        font-size: .95rem;
-        line-height: 1.5;
-        margin-bottom: 1rem;
+    order: -2;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: left;
     }
     
     .card-inicio .btn-info {
-        width: 100%;
-        display: block;
-        text-align: center;
-    }
+    order: -1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: .5rem;
+}
+
     
     .card-inicio .circuit-img {
-        width: 100%;
-        max-width: 340px;
+    order: -3;
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
     }
-    
     .card-inicio .circuit-img img {
-        width: 100%;
-        height: auto;
-        display: block;
-        border-radius: 12px;
+    width: 100%;
+    height: 400px;
+    display: block;
+    border-radius: 12px;
     }
     
       /* ESCUDERIAS */
@@ -266,9 +275,7 @@
     .info-neumaticos ul li strong {
         padding-right: 5px;
     }
-    main:hover{
-        display: none;
-    }
+    
     
         /*CONTACTO*/
     
