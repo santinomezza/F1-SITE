@@ -103,37 +103,52 @@
     }
     
       /* ESCUDERIAS */
-    
-    .grid-escuderias {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(10);
-        gap: 18px;
-        justify-items: center;
-        padding: 10px 12px;
-        box-sizing: border-box;
-    }
-    .grid-item-piloto-1,
-    .grid-item-piloto-2 {
-        display: none;
-    }
-    .grid-info-auto {
-        position: relative;   
-        height: 500px;
-        width: 400px;       
-        padding-bottom: 50px;
-    }
-    .grid-info-auto h2 {
-        text-align: center;
-        font-size: 35px;
-    }
-    .grid-info-auto p {
-        position: absolute;
-        bottom: 0;         
-        left: 0;
-        width: 100%;
-        margin: 0;
-        text-align: center;
-    }
+
+  /* Ocultamos columnas de pilotos */
+  .grid-item-piloto-1,
+  .grid-item-piloto-2 {
+    display: none !important;
+  }
+
+  /* La grilla muestra 1 sola columna */
+  .grid-escuderias {
+    display: grid !important;
+    grid-template-columns: 1fr !important;  /* solo una columna */
+    grid-auto-rows: auto !important;
+    gap: 2rem;
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  /* Las cards del medio se expanden al ancho completo */
+  .grid-info-auto {
+    width: 100%;
+    padding: 1.5rem 1rem;
+    border-radius: 12px;
+    text-align: center;
+    border: 2px solid rgb(37, 35, 35);
+  }
+
+  /* Título centrado, más grande en mobile */
+  .grid-info-auto h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Auto más grande y responsivo */
+  .grid-info-auto .car-img {
+    width: 90%;
+    max-width: 300px;
+    margin: 1rem auto;
+    display: block;
+  }
+
+  /* Texto más legible */
+  .grid-info-auto p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+  }
         /*CIRCUITOS*/
     
     .grid-item-circuitos {
@@ -169,69 +184,57 @@
     }
     
     /*PILOTOS*/
-    
-    .grid-pilotos {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
+        /* Contenedor principal en columna */
+    .pilotos-container {
+        width: 100%;
+        padding: 0 10px;
+        gap: 25px;
     }
-    .grid-item,
-    .grid-item-info-1,
-    .grid-item-info-2,
-    .grid-item-info-3,
-    .grid-item-info-4,
-    .grid-item-info-5,
-    .grid-item-info-6,
-    .grid-item-info-7,
-    .grid-item-info-8,
-    .grid-item-info-9,
-    .grid-item-info-10, 
-    .grid-item-info-11,
-    .grid-item-info-12,
-    .grid-item-info-13,
-    .grid-item-info-14,
-    .grid-item-info-15,
-    .grid-item-info-16,
-    .grid-item-info-17,
-    .grid-item-info-18,
-    .grid-item-info-19,
-    .grid-item-info-20 {
-        width: 90%;
-        margin: 0 auto 20px auto;
+
+    /* Cada piloto ahora se apila verticalmente */
+    .piloto-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
     }
-    .grid-item {
-        height: 450px;
-        background-size:cover;
-        background-position: center;
+
+    /* Imagen arriba, tamaño ajustado */
+    .piloto-img {
+        width: 98%;
+        max-width: 100%;
+        height: 420px;          /* Ajustable si querés más alto */
+        object-fit: cover;
+        border-radius: 12px;
     }
-    .grid-item-info-1-2 {
-        margin-top: -5px;       
-        padding: 20px;
-        font-size: 20px;
-        width: 90%;
+
+    /* Tarjeta a ancho completo */
+    .info-card {
+        width: 100%;
+        height: 420px;
+        border-radius: 12px;
+        min-height: auto;      /* Permite que se adapte al contenido */
     }
-    .grid-item-info-1 h2,
-    .grid-item-info-2 h2,
-    .grid-item-info-3 h2, 
-    .grid-item-info-4 h2, 
-    .grid-item-info-5 h2, 
-    .grid-item-info-6 h2, 
-    .grid-item-info-7 h2, 
-    .grid-item-info-8 h2, 
-    .grid-item-info-9 h2, 
-    .grid-item-info-10 h2, 
-    .grid-item-info-11 h2,
-    .grid-item-info-12 h2,
-    .grid-item-info-13 h2, 
-    .grid-item-info-14 h2, 
-    .grid-item-info-15 h2, 
-    .grid-item-info-16 h2, 
-    .grid-item-info-17 h2, 
-    .grid-item-info-18 h2, 
-    .grid-item-info-19 h2, 
-    .grid-item-info-20 h2{
-        font-size: 28px;
+
+    /* Fondo dentro de la tarjeta */
+    .bg-img {
+        filter: brightness(0.55);   /* Mantiene el efecto oscuro */
     }
-    
+
+    /* Título centrado y más pequeño */
+    .info-content h2 {
+        font-size: 26px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    /* Lista ajustada */
+    .info-content ul {
+        padding-top: 50px;
+        font-size: 15px;
+        padding: 12px;
+        line-height: 1.4rem;
+    }
+
         /*NEUMATICOS*/
     
     .container-neumaticos {

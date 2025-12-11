@@ -1,419 +1,85 @@
+/* === CONTENEDOR GENERAL === */
+.pilotos-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
 
-/*PILOTOS*/
-.grid-pilotos {
-    display: grid;
-    grid-template-columns: repeat(2, 500px);
-    grid-template-rows: repeat(20, 500px);
-    align-content: center;
+/* === FILA DE CADA PILOTO === */
+/* USAMOS FLEX PARA QUE AMBAS COLUMNAS MIDAN LO MISMO */
+.piloto-row {
+    display: flex;
     justify-content: center;
+    align-items: stretch; /* 🔥 Hace que ambos tengan misma altura */
+    gap: 30px;
 }
 
-.grid-item {
-@include piloto-card(10px, 10px);
-    background-color: $tertiary-color;
-    padding: 10px;
-    font-size: 30px;
-    color: $primary-color;
-    border: solid 3px $primary-color;
-}
+/* === IMAGEN DEL PILOTO === */
+.piloto-img {
+    width: 450px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
 
-.grid-item:hover{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    transform: scale(1.05); 
-    box-shadow: 0 0 20px rgba(250, 250, 250, 0.609); 
-    z-index: 2;
-}
-.grid-pilotos h2 {
-    @extend .titulo-subrayado-grande;
-    color: white;
 }
 
-.grid-pilotos ul {
-    margin-top: 10px;
-    list-style: none;
-    color: white;
-    font-size: 20px;
-    border-radius: 10px;
-    background: linear-gradient(to bottom, rgba(46, 44, 44, 0.305), rgba(46, 44, 44, 0.068), rgba(46, 44, 44, 0.305));
+.piloto-img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.45);
+}
+
+
+/* === TARJETA DE INFORMACIÓN === */
+.info-card {
+    width: 500px;
+    border-radius: 15px;
     position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Fondo detrás */
+.bg-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.50);
+    z-index: 1;
+}
+
+/* Contenido encima del fondo */
+.info-content {
+    position: relative;
+    z-index: 2;
+    padding: 25px;
+    color: white;
+}
+
+.info-content h2 {
+    font-size: 34px;
+    margin-bottom: 15px;
+    @extend .titulo-subrayado-grande;
+}
+
+.info-content ul {
+    list-style: none;
+    margin: 0;
     padding: 15px;
-}
-#grid-1 {
-    background-image: url(../img/LandoNorris\ _3.jpeg);
-}
-
-#grid-2 {
-    background-image: url(../img/OscarPiastri.jpeg);
-}
-
-#grid-3 {
-    background-image: url(../img/MaxVerstappen.jpeg);
-}
-
-#grid-4 {
-    background-image: url(../img/GeorgeRussell.jpeg);
-}
-
-#grid-5 {
-    background-image: url(../img/CharlesLeclerc.jpeg);
-}
-
-#grid-6 {
-    background-image: url(../img/LewisHamilton.jpeg);
-}
-
-#grid-7 {
-    background-image: url(../img/KimiAntonelli.jpeg);
-}
-
-#grid-8 {
-    background-image: url(../img/AlexanderAlbon.jpeg);
-}
-
-#grid-9 {
-    background-image: url(../img/NicoHulkenberg.jpeg);
-}
-
-#grid-10 {
-    background-image: url(../img/IsackHadjar.jpeg);
-}
-
-#grid-11 {
-    background-image: url(../img/CarlosSainz.jpeg);
-}
-
-#grid-12 {
-    background-image: url(../img/FernandoAlonso.jpeg);
-}
-
-#grid-13 {
-    background-image: url(../img/OliverBearman.jpeg);
-}
-
-#grid-14 {
-    background-image: url(../img/LanceStroll.jpeg);
-}
-
-#grid-15 {
-    background-image: url(../img/LiamLawson.jpeg);
-}
-
-#grid-16 {
-    background-image: url(../img/EstebanOcon.jpeg);
-}
-
-#grid-17 {
-    background-image: url(../img/YukiTsunoda.jpeg);
-}
-
-#grid-18 {
-    background-image: url(../img/PierreGasly.jpeg);
-}
-
-#grid-19 {
-    background-image: url(../img/GabrielBortoleto.jpeg);
-}
-
-#grid-20 {
-    background-image: url(../img/FrancoColapinto.jpeg);
-}
-
-.grid-item-info-1 {
-    background-image: url(../img/mclaren-mini.jpeg);
-    background-size: cover;
-    background-position: center;
     border-radius: 10px;
-    margin: 10px;
-    padding: 20px;
-}
-.grid-item-info-1:hover {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    transform: scale(1.05); 
-    box-shadow: 0 0 20px #ffcc009b; 
-    z-index: 2;
+    background: rgba(255, 255, 255, 0.13);
+    font-size: 18px;
+    line-height: 1.5rem;
 }
 
-.grid-item-info-2 {
-    background-image: url(../img/mclaren-mini.jpeg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 20px;
-}
-.grid-item-info-2:hover {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    transform: scale(1.05); 
-    box-shadow: 0 0 20px #ffcc009b; 
-    z-index: 2;
-}
-
-.grid-item-info-3 {
-    background-image: url(../img/red-bull-mini.jpeg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 20px;
-}
-.grid-item-info-3:hover {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    transform: scale(1.05); 
-    box-shadow: 0 0 20px rgba(28, 4, 242, 0.609); 
-    z-index: 2;
-}
-
-.grid-item-info-4 {
-    background-image: url(../img/mercedes-minii.jpeg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 20px;
-}
-.grid-item-info-4:hover {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    transform: scale(1.05); 
-    box-shadow: 0 0 20px rgba(0, 234, 255, 0.609); 
-    z-index: 2;
-}
-
-.grid-item-info-5 {
-    background-image: url(../img/ferrari-mini.jpeg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 20px;
-}
-.grid-item-info-5:hover {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    transform: scale(1.05); 
-    box-shadow: 0 0 20px rgba(255, 0, 0, 0.609); 
-    z-index: 2;
-}
-
-.grid-item-info-6 {
-    background-image: url(../img/ferrari-mini.jpeg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 20px;
-}
-.grid-item-info-6:hover {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    transform: scale(1.05); 
-    box-shadow: 0 0 20px rgba(255, 0, 0, 0.609); 
-    z-index: 2;
-}
-
-.grid-item-info-7 {
-    background-image: url(../img/mercedes-minii.jpeg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 20px;
-}
-.grid-item-info-7:hover {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    transform: scale(1.05); 
-    box-shadow: 0 0 20px rgba(0, 234, 255, 0.609); 
-    z-index: 2;
-}
-
-.grid-item-info-8 {
-    background-image: url(../img/williams-mini-.jpeg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 20px;
-}
-.grid-item-info-8:hover {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    transform: scale(1.05); 
-    box-shadow: 0 0 20px rgba(35, 2, 255, 0.609); 
-    z-index: 2;
-}
-
-.grid-item-info-9 {
-    background-image: url(../img/stake-mini.jpeg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 20px;
-}
-.grid-item-info-9:hover {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    transform: scale(1.05); 
-    box-shadow: 0 0 20px rgba(0, 240, 20, 0.609); 
-    z-index: 2;
-}
-
-.grid-item-info-10 {
-    background-image: url(../img/red-bull-visa-mini.jpeg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 20px;
-}
-.grid-item-info-10:hover {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    transform: scale(1.05); 
-    box-shadow: 0 0 20px rgba(20, 0, 243, 0.609); 
-    z-index: 2;
-}
-
-.grid-item-info-11 {
-    background-image: url(../img/williams-mini-.jpeg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 20px;
-}
-.grid-item-info-11:hover {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    transform: scale(1.05); 
-    box-shadow: 0 0 20px rgba(35, 2, 255, 0.609); 
-    z-index: 2;
-}
-
-.grid-item-info-12 {
-    background-image: url(../img/aston-martin-mini.jpeg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 20px;
-}
-.grid-item-info-12:hover {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    transform: scale(1.05); 
-    box-shadow: 0 0 20px rgba(0, 90, 41, 0.609); 
-    z-index: 2;
-}
-
-.grid-item-info-13 {
-    background-image: url(../img/Haas-mini.jpeg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 20px;
-}
-.grid-item-info-13:hover {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    transform: scale(1.05); 
-    box-shadow: 0 0 20px rgba(250, 250, 250, 0.609); 
-    z-index: 2;
-}
-
-.grid-item-info-14 {
-    background-image: url(../img/aston-martin-mini.jpeg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 20px;
-}
-.grid-item-info-14:hover {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    transform: scale(1.05); 
-    box-shadow: 0 0 20px rgba(0, 90, 41, 0.609); 
-    z-index: 2;
-}
-
-.grid-item-info-15 {
-    background-image: url(../img/red-bull-visa-mini.jpeg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 20px;
-}
-.grid-item-info-15:hover {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    transform: scale(1.05); 
-    box-shadow: 0 0 20px rgba(20, 0, 243, 0.609); 
-    z-index: 2;
-}
-
-.grid-item-info-16 {
-    background-image: url(../img/Haas-mini.jpeg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 20px;
-}
-.grid-item-info-16:hover {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    transform: scale(1.05); 
-    box-shadow: 0 0 20px rgba(250, 250, 250, 0.609); 
-    z-index: 2;
-}
-
-.grid-item-info-17 {
-    background-image: url(../img/red-bull-mini.jpeg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 20px;
-}
-.grid-item-info-17:hover {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    transform: scale(1.05); 
-    box-shadow: 0 0 20px rgba(13, 0, 255, 0.609); 
-    z-index: 2;
-}
-
-.grid-item-info-18 {
-    background-image: url(../img/alpine-mini.jpeg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 20px;
-}
-.grid-item-info-18:hover {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    transform: scale(1.05); 
-    box-shadow: 0 0 20px rgba(12, 121, 176, 0.609); 
-    z-index: 2;
-}
-
-.grid-item-info-19 {
-    background-image: url(../img/stake-mini.jpeg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 20px;
-}
-.grid-item-info-19:hover {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    transform: scale(1.05); 
-    box-shadow: 0 0 20px rgba(0, 240, 20, 0.609); 
-    z-index: 2;
-}
-
-.grid-item-info-20 {
-    background-image: url(../img/alpine-mini.jpeg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 20px;
-}
-.grid-item-info-20:hover {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    transform: scale(1.05); 
-    box-shadow: 0 0 20px rgba(12, 121, 176, 0.609); 
-    z-index: 2;
+.info-card:hover {
+    transform: scale(1.02);
+    transition: 0.3s ease;
 }

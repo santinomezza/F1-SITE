@@ -1,10 +1,11 @@
-.titulo-subrayado, .info-neumaticos h2, .grid-info-auto h2, .cuadro h2, .grid-item-circuitos h2, .info h2 {
+@charset "UTF-8";
+.titulo-subrayado, .info-neumaticos h2, .cuadro h2, .grid-item-circuitos h2, .info h2 {
   font-size: 2rem;
   font-weight: 900;
   text-decoration: underline;
 }
 
-.titulo-subrayado-grande, .grid-pilotos h2 {
+.titulo-subrayado-grande, .info-content h2 {
   font-size: 42px;
   font-weight: 900;
   text-decoration: overline black;
@@ -23,8 +24,7 @@
 }
 
 body {
-  background-color: rgb(77, 9, 9);
-  background-image: url("../img/FONDOSILUETA.jpg");
+  background-image: url("/assets/img/FONDOSILUETA.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -277,290 +277,96 @@ form {
   border-radius: 10px;
 }
 
-/*ESCUDERIAS*/
-.grid-escuderias {
-  display: grid;
-  grid-template-columns: repeat(3, 500px);
-  grid-template-rows: repeat(10, 500px);
-  align-content: center;
-  justify-content: center;
+/* ==== ESCUDERÍAS – ESTILOS FUERTES ==== */
+.main-escuderias {
+  max-width: 1700px;
+  margin: 0 auto 4rem;
+  padding: 2rem 1rem 4rem;
+}
+
+.titulo-escuderias {
   text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.4rem;
+  color: #fff;
 }
 
-.grid-item-piloto-1 {
-  margin: 10px;
-  border-radius: 10px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: rgb(194, 9, 9);
-  padding: 10px;
-  font-size: 30px;
-  color: rgb(0, 0, 0);
-  border: solid 3px black;
+/* GRID: 3 columnas centradas */
+.grid-escuderias {
+  display: grid !important;
+  grid-template-columns: repeat(3, 500px) !important;
+  grid-auto-rows: 500px !important; /* todas las celdas mismas medidas */
+  justify-content: center;
+  align-items: stretch;
+  gap: 1.5rem;
 }
 
-.grid-info-auto p {
+/* TARJETAS DE PILOTOS (izquierda y derecha) */
+.grid-item-piloto-1,
+.grid-item-piloto-2 {
+  background-color: #111;
+  border-radius: 15px;
+  overflow: hidden; /* la imagen no se sale */
+  padding: 0;
+  height: 100%; /* ocupa todo el alto de la celda */
+}
+
+/* imagen rellena la celda, como background-size: cover */
+.grid-item-piloto-1 img,
+.grid-item-piloto-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 🔥 clave */
   display: block;
-  background-color: rgba(46, 44, 44, 0.479);
-  border-radius: 10px;
-  margin-top: 32%;
-  color: rgb(255, 255, 255);
-  font-size: 20px;
+}
+
+/* TARJETA CENTRAL (texto + auto) */
+.grid-info-auto {
+  background-color: rgba(0, 0, 0, 0.85);
+  border-radius: 15px;
+  padding: 2rem 2.5rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  height: 100%;
 }
 
 .grid-info-auto h2 {
-  margin: 10px;
-  border-radius: 10px;
-  background-size: contain;
-  background-repeat: no-repeat;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 
-.grid-item-piloto-2 {
-  border-radius: 10px;
-  margin: 10px;
-  background-size: contain;
-  background-repeat: no-repeat;
+.grid-info-auto p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 0.5rem;
 }
 
+/* auto centrado dentro de la card */
+.grid-info-auto .car-img {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto 1rem;
+}
+
+/* HOVER suave */
+.grid-item-piloto-1,
+.grid-item-piloto-2,
 .grid-info-auto {
-  background-color: rgba(46, 44, 44, 0.479);
-  border-radius: 10px;
-  margin: 10px;
-  padding: 20px;
-  color: rgba(255, 255, 255, 0.63);
-}
-
-#grid-escuderias-1 {
-  background-image: url(../img/LandoNorris\ _3.jpeg);
-}
-
-#grid-escuderias-2 {
-  background-image: url(../img/OscarPiastri.jpeg);
-}
-
-#grid-escuderias-3 {
-  background-image: url(../img/MaxVerstappen.jpeg);
-}
-
-#grid-escuderias-4 {
-  background-image: url(../img/YukiTsunoda.jpeg);
-}
-
-#grid-escuderias-5 {
-  background-image: url(../img/CharlesLeclerc.jpeg);
-}
-
-#grid-escuderias-6 {
-  background-image: url(../img/LewisHamilton.jpeg);
-}
-
-#grid-escuderias-7 {
-  background-image: url(../img/GeorgeRussell.jpeg);
-}
-
-#grid-escuderias-8 {
-  background-image: url(../img/KimiAntonelli.jpeg);
-}
-
-#grid-escuderias-9 {
-  background-image: url(../img/FernandoAlonso.jpeg);
-}
-
-#grid-escuderias-10 {
-  background-image: url(../img/LanceStroll.jpeg);
-}
-
-#grid-escuderias-11 {
-  background-image: url(../img/CarlosSainz.jpeg);
-}
-
-#grid-escuderias-12 {
-  background-image: url(../img/AlexanderAlbon.jpeg);
-}
-
-#grid-escuderias-13 {
-  background-image: url(../img/LiamLawson.jpeg);
-}
-
-#grid-escuderias-14 {
-  background-image: url(../img/IsackHadjar.jpeg);
-}
-
-#grid-escuderias-15 {
-  background-image: url(../img/PierreGasly.jpeg);
-}
-
-#grid-escuderias-16 {
-  background-image: url(../img/FrancoColapinto.jpeg);
-}
-
-#grid-escuderias-17 {
-  background-image: url(../img/NicoHulkenberg.jpeg);
-}
-
-#grid-escuderias-18 {
-  background-image: url(../img/GabrielBortoleto.jpeg);
-}
-
-#grid-escuderias-19 {
-  background-image: url(../img/EstebanOcon.jpeg);
-}
-
-#grid-escuderias-20 {
-  background-image: url(../img/OliverBearman.jpeg);
-}
-
-#auto-1 {
-  background-image: url(../img/2025mclarencarright-removebg-preview.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#auto-1 h2 {
-  background: linear-gradient(80deg, #ffae00, #292727);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 50px;
-  padding-bottom: 60px;
-}
-
-#auto-2 {
-  background-image: url(../img/2025redbullracingcarright-removebg-preview.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#auto-2 h2 {
-  background: linear-gradient(90deg, #0000ff, #312f2f);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  padding-bottom: 60px;
-}
-
-#auto-3 {
-  background-image: url(../img/2025ferraricarright-removebg-preview.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#auto-3 h2 {
-  background: linear-gradient(90deg, #ff0000, #000000);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  padding-bottom: 60px;
-}
-
-#auto-4 {
-  background-image: url(../img/2025mercedescarright-removebg-preview.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#auto-4 h2 {
-  background: linear-gradient(90deg, #04ffea, #363535);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 40px;
-  padding-bottom: 80px;
-}
-
-#auto-5 {
-  background-image: url(../img/2025astonmartincarright-removebg-preview.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#auto-5 h2 {
-  background: linear-gradient(90deg, #05492d, #494646);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 40px;
-  padding-bottom: 80px;
-}
-
-#auto-6 {
-  background-image: url(../img/2025williamscarright-removebg-preview.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#auto-6 h2 {
-  background: linear-gradient(90deg, #0000ff, #464242);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  padding-bottom: 60px;
-}
-
-#auto-7 {
-  background-image: url(../img/2025racingbullscarright-removebg-preview.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#auto-7 h2 {
-  background: linear-gradient(90deg, #00a2ff, #252424);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 40px;
-  padding-bottom: 80px;
-}
-
-#auto-8 {
-  background-image: url(../img/2025alpinecarright-removebg-preview\ \(1\).png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#auto-8 h2 {
-  background: linear-gradient(90deg, #d85f97, #444242);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  padding-bottom: 60px;
-}
-
-#auto-9 {
-  background-image: url(../img/2025kicksaubercarright-removebg-preview.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#auto-9 h2 {
-  background: linear-gradient(90deg, #11bd1f, #444242);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  padding-bottom: 60px;
-}
-
-#auto-10 {
-  background-image: url(../img/2025haascarright-removebg-preview.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#auto-10 h2 {
-  background: linear-gradient(90deg, #ffffff, #575353);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  padding-bottom: 60px;
-}
-
-.grid-item-piloto-1, .grid-item-piloto-2, .grid-info-auto {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.grid-item-piloto-1:hover, .grid-item-piloto-2:hover, .grid-info-auto:hover {
+.grid-item-piloto-1:hover,
+.grid-item-piloto-2:hover,
+.grid-info-auto:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(250, 250, 250, 0.609);
+  box-shadow: 0 0 20px rgba(250, 250, 250, 0.6);
   z-index: 2;
 }
 
@@ -653,447 +459,87 @@ form {
   color: #1d1d8d;
 }
 
-/*PILOTOS*/
-.grid-pilotos {
-  display: grid;
-  grid-template-columns: repeat(2, 500px);
-  grid-template-rows: repeat(20, 500px);
-  align-content: center;
+/* === CONTENEDOR GENERAL === */
+.pilotos-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* === FILA DE CADA PILOTO === */
+/* USAMOS FLEX PARA QUE AMBAS COLUMNAS MIDAN LO MISMO */
+.piloto-row {
+  display: flex;
   justify-content: center;
+  align-items: stretch; /* 🔥 Hace que ambos tengan misma altura */
+  gap: 30px;
 }
 
-.grid-item {
-  margin: 10px;
-  border-radius: 10px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: rgba(46, 44, 44, 0.479);
-  padding: 10px;
-  font-size: 30px;
-  color: black;
-  border: solid 3px black;
-}
-
-.grid-item:hover {
+/* === IMAGEN DEL PILOTO === */
+.piloto-img {
+  width: 450px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(250, 250, 250, 0.609);
-  z-index: 2;
 }
 
-.grid-pilotos h2 {
-  color: white;
+.piloto-img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.45);
 }
 
-.grid-pilotos ul {
-  margin-top: 10px;
-  list-style: none;
-  color: white;
-  font-size: 20px;
-  border-radius: 10px;
-  background: linear-gradient(to bottom, rgba(46, 44, 44, 0.305), rgba(46, 44, 44, 0.068), rgba(46, 44, 44, 0.305));
+/* === TARJETA DE INFORMACIÓN === */
+.info-card {
+  width: 500px;
+  border-radius: 15px;
   position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Fondo detrás */
+.bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.5);
+  z-index: 1;
+}
+
+/* Contenido encima del fondo */
+.info-content {
+  position: relative;
+  z-index: 2;
+  padding: 25px;
+  color: white;
+}
+
+.info-content h2 {
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+
+.info-content ul {
+  list-style: none;
+  margin: 0;
   padding: 15px;
-}
-
-#grid-1 {
-  background-image: url(../img/LandoNorris\ _3.jpeg);
-}
-
-#grid-2 {
-  background-image: url(../img/OscarPiastri.jpeg);
-}
-
-#grid-3 {
-  background-image: url(../img/MaxVerstappen.jpeg);
-}
-
-#grid-4 {
-  background-image: url(../img/GeorgeRussell.jpeg);
-}
-
-#grid-5 {
-  background-image: url(../img/CharlesLeclerc.jpeg);
-}
-
-#grid-6 {
-  background-image: url(../img/LewisHamilton.jpeg);
-}
-
-#grid-7 {
-  background-image: url(../img/KimiAntonelli.jpeg);
-}
-
-#grid-8 {
-  background-image: url(../img/AlexanderAlbon.jpeg);
-}
-
-#grid-9 {
-  background-image: url(../img/NicoHulkenberg.jpeg);
-}
-
-#grid-10 {
-  background-image: url(../img/IsackHadjar.jpeg);
-}
-
-#grid-11 {
-  background-image: url(../img/CarlosSainz.jpeg);
-}
-
-#grid-12 {
-  background-image: url(../img/FernandoAlonso.jpeg);
-}
-
-#grid-13 {
-  background-image: url(../img/OliverBearman.jpeg);
-}
-
-#grid-14 {
-  background-image: url(../img/LanceStroll.jpeg);
-}
-
-#grid-15 {
-  background-image: url(../img/LiamLawson.jpeg);
-}
-
-#grid-16 {
-  background-image: url(../img/EstebanOcon.jpeg);
-}
-
-#grid-17 {
-  background-image: url(../img/YukiTsunoda.jpeg);
-}
-
-#grid-18 {
-  background-image: url(../img/PierreGasly.jpeg);
-}
-
-#grid-19 {
-  background-image: url(../img/GabrielBortoleto.jpeg);
-}
-
-#grid-20 {
-  background-image: url(../img/FrancoColapinto.jpeg);
-}
-
-.grid-item-info-1 {
-  background-image: url(../img/mclaren-mini.jpeg);
-  background-size: cover;
-  background-position: center;
   border-radius: 10px;
-  margin: 10px;
-  padding: 20px;
+  background: rgba(255, 255, 255, 0.13);
+  font-size: 18px;
+  line-height: 1.5rem;
 }
 
-.grid-item-info-1:hover {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(255, 204, 0, 0.6078431373);
-  z-index: 2;
-}
-
-.grid-item-info-2 {
-  background-image: url(../img/mclaren-mini.jpeg);
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
-  margin: 10px;
-  padding: 20px;
-}
-
-.grid-item-info-2:hover {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(255, 204, 0, 0.6078431373);
-  z-index: 2;
-}
-
-.grid-item-info-3 {
-  background-image: url(../img/red-bull-mini.jpeg);
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
-  margin: 10px;
-  padding: 20px;
-}
-
-.grid-item-info-3:hover {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(28, 4, 242, 0.609);
-  z-index: 2;
-}
-
-.grid-item-info-4 {
-  background-image: url(../img/mercedes-minii.jpeg);
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
-  margin: 10px;
-  padding: 20px;
-}
-
-.grid-item-info-4:hover {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(0, 234, 255, 0.609);
-  z-index: 2;
-}
-
-.grid-item-info-5 {
-  background-image: url(../img/ferrari-mini.jpeg);
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
-  margin: 10px;
-  padding: 20px;
-}
-
-.grid-item-info-5:hover {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(255, 0, 0, 0.609);
-  z-index: 2;
-}
-
-.grid-item-info-6 {
-  background-image: url(../img/ferrari-mini.jpeg);
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
-  margin: 10px;
-  padding: 20px;
-}
-
-.grid-item-info-6:hover {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(255, 0, 0, 0.609);
-  z-index: 2;
-}
-
-.grid-item-info-7 {
-  background-image: url(../img/mercedes-minii.jpeg);
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
-  margin: 10px;
-  padding: 20px;
-}
-
-.grid-item-info-7:hover {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(0, 234, 255, 0.609);
-  z-index: 2;
-}
-
-.grid-item-info-8 {
-  background-image: url(../img/williams-mini-.jpeg);
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
-  margin: 10px;
-  padding: 20px;
-}
-
-.grid-item-info-8:hover {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(35, 2, 255, 0.609);
-  z-index: 2;
-}
-
-.grid-item-info-9 {
-  background-image: url(../img/stake-mini.jpeg);
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
-  margin: 10px;
-  padding: 20px;
-}
-
-.grid-item-info-9:hover {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(0, 240, 20, 0.609);
-  z-index: 2;
-}
-
-.grid-item-info-10 {
-  background-image: url(../img/red-bull-visa-mini.jpeg);
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
-  margin: 10px;
-  padding: 20px;
-}
-
-.grid-item-info-10:hover {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(20, 0, 243, 0.609);
-  z-index: 2;
-}
-
-.grid-item-info-11 {
-  background-image: url(../img/williams-mini-.jpeg);
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
-  margin: 10px;
-  padding: 20px;
-}
-
-.grid-item-info-11:hover {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(35, 2, 255, 0.609);
-  z-index: 2;
-}
-
-.grid-item-info-12 {
-  background-image: url(../img/aston-martin-mini.jpeg);
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
-  margin: 10px;
-  padding: 20px;
-}
-
-.grid-item-info-12:hover {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(0, 90, 41, 0.609);
-  z-index: 2;
-}
-
-.grid-item-info-13 {
-  background-image: url(../img/Haas-mini.jpeg);
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
-  margin: 10px;
-  padding: 20px;
-}
-
-.grid-item-info-13:hover {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(250, 250, 250, 0.609);
-  z-index: 2;
-}
-
-.grid-item-info-14 {
-  background-image: url(../img/aston-martin-mini.jpeg);
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
-  margin: 10px;
-  padding: 20px;
-}
-
-.grid-item-info-14:hover {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(0, 90, 41, 0.609);
-  z-index: 2;
-}
-
-.grid-item-info-15 {
-  background-image: url(../img/red-bull-visa-mini.jpeg);
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
-  margin: 10px;
-  padding: 20px;
-}
-
-.grid-item-info-15:hover {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(20, 0, 243, 0.609);
-  z-index: 2;
-}
-
-.grid-item-info-16 {
-  background-image: url(../img/Haas-mini.jpeg);
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
-  margin: 10px;
-  padding: 20px;
-}
-
-.grid-item-info-16:hover {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(250, 250, 250, 0.609);
-  z-index: 2;
-}
-
-.grid-item-info-17 {
-  background-image: url(../img/red-bull-mini.jpeg);
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
-  margin: 10px;
-  padding: 20px;
-}
-
-.grid-item-info-17:hover {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(13, 0, 255, 0.609);
-  z-index: 2;
-}
-
-.grid-item-info-18 {
-  background-image: url(../img/alpine-mini.jpeg);
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
-  margin: 10px;
-  padding: 20px;
-}
-
-.grid-item-info-18:hover {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(12, 121, 176, 0.609);
-  z-index: 2;
-}
-
-.grid-item-info-19 {
-  background-image: url(../img/stake-mini.jpeg);
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
-  margin: 10px;
-  padding: 20px;
-}
-
-.grid-item-info-19:hover {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(0, 240, 20, 0.609);
-  z-index: 2;
-}
-
-.grid-item-info-20 {
-  background-image: url(../img/alpine-mini.jpeg);
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
-  margin: 10px;
-  padding: 20px;
-}
-
-.grid-item-info-20:hover {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(12, 121, 176, 0.609);
-  z-index: 2;
+.info-card:hover {
+  transform: scale(1.02);
+  transition: 0.3s ease;
 }
 
 h1 {
@@ -1229,35 +675,45 @@ input[type=email] {
     border-radius: 12px;
   }
   /* ESCUDERIAS */
-  .grid-escuderias {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(10);
-    gap: 18px;
-    justify-items: center;
-    padding: 10px 12px;
-    box-sizing: border-box;
-  }
+  /* Ocultamos columnas de pilotos */
   .grid-item-piloto-1,
   .grid-item-piloto-2 {
-    display: none;
+    display: none !important;
   }
-  .grid-info-auto {
-    position: relative;
-    height: 500px;
-    width: 400px;
-    padding-bottom: 50px;
-  }
-  .grid-info-auto h2 {
-    text-align: center;
-    font-size: 35px;
-  }
-  .grid-info-auto p {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+  /* La grilla muestra 1 sola columna */
+  .grid-escuderias {
+    display: grid !important;
+    grid-template-columns: 1fr !important; /* solo una columna */
+    grid-auto-rows: auto !important;
+    gap: 2rem;
     width: 100%;
-    margin: 0;
+    padding: 0 1rem;
+  }
+  /* Las cards del medio se expanden al ancho completo */
+  .grid-info-auto {
+    width: 100%;
+    padding: 1.5rem 1rem;
+    border-radius: 12px;
     text-align: center;
+    border: 2px solid rgb(37, 35, 35);
+  }
+  /* Título centrado, más grande en mobile */
+  .grid-info-auto h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  /* Auto más grande y responsivo */
+  .grid-info-auto .car-img {
+    width: 90%;
+    max-width: 300px;
+    margin: 1rem auto;
+    display: block;
+  }
+  /* Texto más legible */
+  .grid-info-auto p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 1rem;
   }
   /*CIRCUITOS*/
   .grid-item-circuitos {
@@ -1292,66 +748,49 @@ input[type=email] {
     font-size: 16px;
   }
   /*PILOTOS*/
-  .grid-pilotos {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
+  /* Contenedor principal en columna */
+  .pilotos-container {
+    width: 100%;
+    padding: 0 10px;
+    gap: 25px;
   }
-  .grid-item,
-  .grid-item-info-1,
-  .grid-item-info-2,
-  .grid-item-info-3,
-  .grid-item-info-4,
-  .grid-item-info-5,
-  .grid-item-info-6,
-  .grid-item-info-7,
-  .grid-item-info-8,
-  .grid-item-info-9,
-  .grid-item-info-10,
-  .grid-item-info-11,
-  .grid-item-info-12,
-  .grid-item-info-13,
-  .grid-item-info-14,
-  .grid-item-info-15,
-  .grid-item-info-16,
-  .grid-item-info-17,
-  .grid-item-info-18,
-  .grid-item-info-19,
-  .grid-item-info-20 {
-    width: 90%;
-    margin: 0 auto 20px auto;
+  /* Cada piloto ahora se apila verticalmente */
+  .piloto-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
   }
-  .grid-item {
-    height: 450px;
-    background-size: cover;
-    background-position: center;
+  /* Imagen arriba, tamaño ajustado */
+  .piloto-img {
+    width: 98%;
+    max-width: 100%;
+    height: 420px; /* Ajustable si querés más alto */
+    object-fit: cover;
+    border-radius: 12px;
   }
-  .grid-item-info-1-2 {
-    margin-top: -5px;
-    padding: 20px;
-    font-size: 20px;
-    width: 90%;
+  /* Tarjeta a ancho completo */
+  .info-card {
+    width: 100%;
+    height: 420px;
+    border-radius: 12px;
+    min-height: auto; /* Permite que se adapte al contenido */
   }
-  .grid-item-info-1 h2,
-  .grid-item-info-2 h2,
-  .grid-item-info-3 h2,
-  .grid-item-info-4 h2,
-  .grid-item-info-5 h2,
-  .grid-item-info-6 h2,
-  .grid-item-info-7 h2,
-  .grid-item-info-8 h2,
-  .grid-item-info-9 h2,
-  .grid-item-info-10 h2,
-  .grid-item-info-11 h2,
-  .grid-item-info-12 h2,
-  .grid-item-info-13 h2,
-  .grid-item-info-14 h2,
-  .grid-item-info-15 h2,
-  .grid-item-info-16 h2,
-  .grid-item-info-17 h2,
-  .grid-item-info-18 h2,
-  .grid-item-info-19 h2,
-  .grid-item-info-20 h2 {
-    font-size: 28px;
+  /* Fondo dentro de la tarjeta */
+  .bg-img {
+    filter: brightness(0.55); /* Mantiene el efecto oscuro */
+  }
+  /* Título centrado y más pequeño */
+  .info-content h2 {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  /* Lista ajustada */
+  .info-content ul {
+    padding-top: 50px;
+    font-size: 15px;
+    padding: 12px;
+    line-height: 1.4rem;
   }
   /*NEUMATICOS*/
   .container-neumaticos {
