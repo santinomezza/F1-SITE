@@ -277,7 +277,7 @@ form {
   border-radius: 10px;
 }
 
-/* ==== ESCUDERÍAS – ESTILOS FUERTES ==== */
+/* ==== ESCUDERÍAS ==== */
 .main-escuderias {
   max-width: 1700px;
   margin: 0 auto 4rem;
@@ -291,36 +291,32 @@ form {
   color: #fff;
 }
 
-/* GRID: 3 columnas centradas */
 .grid-escuderias {
   display: grid !important;
   grid-template-columns: repeat(3, 500px) !important;
-  grid-auto-rows: 500px !important; /* todas las celdas mismas medidas */
+  grid-auto-rows: 500px !important;
   justify-content: center;
   align-items: stretch;
   gap: 1.5rem;
 }
 
-/* TARJETAS DE PILOTOS (izquierda y derecha) */
 .grid-item-piloto-1,
 .grid-item-piloto-2 {
   background-color: #111;
   border-radius: 15px;
-  overflow: hidden; /* la imagen no se sale */
+  overflow: hidden;
   padding: 0;
-  height: 100%; /* ocupa todo el alto de la celda */
+  height: 100%;
 }
 
-/* imagen rellena la celda, como background-size: cover */
 .grid-item-piloto-1 img,
 .grid-item-piloto-2 img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* 🔥 clave */
+  object-fit: cover;
   display: block;
 }
 
-/* TARJETA CENTRAL (texto + auto) */
 .grid-info-auto {
   background-color: rgba(0, 0, 0, 0.85);
   border-radius: 15px;
@@ -346,7 +342,6 @@ form {
   margin-top: 0.5rem;
 }
 
-/* auto centrado dentro de la card */
 .grid-info-auto .car-img {
   max-width: 600px;
   width: 100%;
@@ -355,7 +350,6 @@ form {
   margin: 1.5rem auto 1rem;
 }
 
-/* HOVER suave */
 .grid-item-piloto-1,
 .grid-item-piloto-2,
 .grid-info-auto {
@@ -370,22 +364,19 @@ form {
   z-index: 2;
 }
 
-/* ===== ANIMACIÓN DE AUTO EN CELDA ===== */
 .car-container {
   position: relative;
-  overflow: hidden; /* evita que el auto se salga de la celda */
+  overflow: hidden;
 }
 
-/* Imagen del auto */
 .auto-animado {
   width: 100%;
-  max-width: 350px; /* Ajustable */
+  max-width: 350px;
   position: relative;
-  transform: translateX(-120%); /* empieza fuera de la celda */
+  transform: translateX(-120%);
   animation: auto-drive 1.5s ease-out forwards;
 }
 
-/* Animación */
 @keyframes auto-drive {
   0% {
     transform: translateX(-120%);
@@ -394,7 +385,6 @@ form {
     transform: translateX(0);
   }
 }
-/* Reiniciar animación al pasar el mouse */
 .car-container:hover .auto-animado {
   animation: none;
   transform: translateX(-120%);
@@ -493,7 +483,6 @@ form {
   color: #1d1d8d;
 }
 
-/* === CONTENEDOR GENERAL === */
 .pilotos-container {
   width: 100%;
   max-width: 1400px;
@@ -504,19 +493,16 @@ form {
   gap: 30px;
 }
 
-/* === FILA DE CADA PILOTO === */
-/* USAMOS FLEX PARA QUE AMBAS COLUMNAS MIDAN LO MISMO */
 .piloto-row {
   display: flex;
   justify-content: center;
-  align-items: stretch; /* 🔥 Hace que ambos tengan misma altura */
+  align-items: stretch;
   gap: 30px;
 }
 
-/* === IMAGEN DEL PILOTO === */
 .piloto-img {
-  width: 500px;
-  height: 100%;
+  width: 600px;
+  height: 600px;
   object-fit: cover;
   border-radius: 15px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -527,10 +513,9 @@ form {
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.45);
 }
 
-/* === TARJETA DE INFORMACIÓN === */
 .info-card {
-  width: 670px;
-  height: 670px;
+  width: 600px;
+  height: 600px;
   border-radius: 15px;
   position: relative;
   overflow: hidden;
@@ -539,7 +524,6 @@ form {
   padding-top: 30px;
 }
 
-/* Fondo detrás */
 .bg-img {
   position: absolute;
   inset: 0;
@@ -550,7 +534,6 @@ form {
   z-index: 1;
 }
 
-/* Contenido encima del fondo */
 .info-content {
   position: relative;
   z-index: 2;
@@ -578,319 +561,294 @@ form {
   transition: 0.3s ease;
 }
 
-/* Contenedor de foto + casco */
 .piloto-foto {
   position: relative;
   width: 670px;
-  height: 700px;
+  height: 600px;
 }
 
-/* Foto del piloto */
 .piloto-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/* Casco encima */
 .casco-norris {
   position: absolute;
-  top: -120px; /* Ajustá si queda muy arriba/abajo */
+  top: -120px;
   left: 50%;
-  transform: translateX(-50%) scale(0.85); /* Tamaño */
+  transform: translateX(-50%) scale(0.85);
   opacity: 1;
   transition: opacity 0.3s ease;
-  pointer-events: none; /* Para que el hover funcione */
+  pointer-events: none;
 }
 
-/* Ocultar casco al pasar el cursor */
 .piloto-foto:hover .casco-norris {
   opacity: 0;
 }
 
-/* Casco encima */
 .casco-piastri {
   position: absolute;
-  top: -120px; /* Ajustá si queda muy arriba/abajo */
+  top: -120px;
   left: 49%;
-  transform: translateX(-50%) scale(0.85); /* Tamaño */
+  transform: translateX(-50%) scale(0.85);
   opacity: 1;
   transition: opacity 0.3s ease;
-  pointer-events: none; /* Para que el hover funcione */
+  pointer-events: none;
 }
 
-/* Ocultar casco al pasar el cursor */
 .piloto-foto:hover .casco-piastri {
   opacity: 0;
 }
 
-/* Casco encima */
 .casco-max {
   position: absolute;
-  top: -100px; /* Ajustá si queda muy arriba/abajo */
+  top: -100px;
   left: 51%;
-  transform: translateX(-50%) scale(0.73); /* Tamaño */
+  transform: translateX(-50%) scale(0.73);
   opacity: 1;
   transition: opacity 0.3s ease;
-  pointer-events: none; /* Para que el hover funcione */
+  pointer-events: none;
 }
 
-/* Ocultar casco al pasar el cursor */
 .piloto-foto:hover .casco-max {
   opacity: 0;
 }
 
 .casco-russell {
   position: absolute;
-  top: -103px; /* Ajustá si queda muy arriba/abajo */
+  top: -103px;
   left: 50%;
-  transform: translateX(-50%) scale(0.87); /* Tamaño */
+  transform: translateX(-50%) scale(0.87);
   opacity: 1;
   transition: opacity 0.3s ease;
-  pointer-events: none; /* Para que el hover funcione */
+  pointer-events: none;
 }
 
-/* Ocultar casco al pasar el cursor */
 .piloto-foto:hover .casco-russell {
   opacity: 0;
 }
 
 .casco-leclerc {
   position: absolute;
-  top: -100px; /* Ajustá si queda muy arriba/abajo */
+  top: -100px;
   left: 50%;
-  transform: translateX(-50%) scale(0.76); /* Tamaño */
+  transform: translateX(-50%) scale(0.76);
   opacity: 1;
   transition: opacity 0.3s ease;
-  pointer-events: none; /* Para que el hover funcione */
+  pointer-events: none;
 }
 
-/* Ocultar casco al pasar el cursor */
 .piloto-foto:hover .casco-leclerc {
   opacity: 0;
 }
 
 .casco-hamilton {
   position: absolute;
-  top: -95px; /* Ajustá si queda muy arriba/abajo */
+  top: -95px;
   left: 49%;
-  transform: translateX(-50%) scale(0.75); /* Tamaño */
+  transform: translateX(-50%) scale(0.75);
   opacity: 1;
   transition: opacity 0.3s ease;
-  pointer-events: none; /* Para que el hover funcione */
+  pointer-events: none;
 }
 
-/* Ocultar casco al pasar el cursor */
 .piloto-foto:hover .casco-hamilton {
   opacity: 0;
 }
 
 .casco-antonelli {
   position: absolute;
-  top: -100px; /* Ajustá si queda muy arriba/abajo */
+  top: -100px;
   left: 50%;
-  transform: translateX(-50%) scale(0.77); /* Tamaño */
+  transform: translateX(-50%) scale(0.77);
   opacity: 1;
   transition: opacity 0.3s ease;
-  pointer-events: none; /* Para que el hover funcione */
+  pointer-events: none;
 }
 
-/* Ocultar casco al pasar el cursor */
 .piloto-foto:hover .casco-antonelli {
   opacity: 0;
 }
 
 .casco-albon {
   position: absolute;
-  top: -110px; /* Ajustá si queda muy arriba/abajo */
+  top: -110px;
   left: 50%;
-  transform: translateX(-50%) scale(0.9); /* Tamaño */
+  transform: translateX(-50%) scale(0.9);
   opacity: 1;
   transition: opacity 0.3s ease;
-  pointer-events: none; /* Para que el hover funcione */
+  pointer-events: none;
 }
 
-/* Ocultar casco al pasar el cursor */
 .piloto-foto:hover .casco-albon {
   opacity: 0;
 }
 
 .casco-hulkenberg {
   position: absolute;
-  top: -73px; /* Ajustá si queda muy arriba/abajo */
+  top: -73px;
   left: 50%;
-  transform: translateX(-50%) scale(0.85); /* Tamaño */
+  transform: translateX(-50%) scale(0.85);
   opacity: 1;
   transition: opacity 0.3s ease;
-  pointer-events: none; /* Para que el hover funcione */
+  pointer-events: none;
 }
 
-/* Ocultar casco al pasar el cursor */
 .piloto-foto:hover .casco-hulkenberg {
   opacity: 0;
 }
 
 .casco-hadjar {
   position: absolute;
-  top: -70px; /* Ajustá si queda muy arriba/abajo */
+  top: -70px;
   left: 50%;
-  transform: translateX(-50%) scale(0.92); /* Tamaño */
+  transform: translateX(-50%) scale(0.92);
   opacity: 1;
   transition: opacity 0.3s ease;
-  pointer-events: none; /* Para que el hover funcione */
+  pointer-events: none;
 }
 
-/* Ocultar casco al pasar el cursor */
 .piloto-foto:hover .casco-hadjar {
   opacity: 0;
 }
 
 .casco-sainz {
   position: absolute;
-  top: -105px; /* Ajustá si queda muy arriba/abajo */
+  top: -105px;
   left: 47%;
-  transform: translateX(-50%) scale(0.75); /* Tamaño */
+  transform: translateX(-50%) scale(0.75);
   opacity: 1;
   transition: opacity 0.3s ease;
-  pointer-events: none; /* Para que el hover funcione */
+  pointer-events: none;
 }
 
-/* Ocultar casco al pasar el cursor */
 .piloto-foto:hover .casco-sainz {
   opacity: 0;
 }
 
 .casco-alonso {
   position: absolute;
-  top: -130px; /* Ajustá si queda muy arriba/abajo */
+  top: -130px;
   left: 51%;
-  transform: translateX(-50%) scale(0.78); /* Tamaño */
+  transform: translateX(-50%) scale(0.78);
   opacity: 1;
   transition: opacity 0.3s ease;
-  pointer-events: none; /* Para que el hover funcione */
+  pointer-events: none;
 }
 
-/* Ocultar casco al pasar el cursor */
 .piloto-foto:hover .casco-alonso {
   opacity: 0;
 }
 
 .casco-baerman {
   position: absolute;
-  top: -117px; /* Ajustá si queda muy arriba/abajo */
+  top: -117px;
   left: 52%;
-  transform: translateX(-50%) scale(0.9); /* Tamaño */
+  transform: translateX(-50%) scale(0.9);
   opacity: 1;
   transition: opacity 0.3s ease;
-  pointer-events: none; /* Para que el hover funcione */
+  pointer-events: none;
 }
 
-/* Ocultar casco al pasar el cursor */
 .piloto-foto:hover .casco-baerman {
   opacity: 0;
 }
 
 .casco-stroll {
   position: absolute;
-  top: -125px; /* Ajustá si queda muy arriba/abajo */
+  top: -125px;
   left: 50%;
-  transform: translateX(-50%) scale(0.9); /* Tamaño */
+  transform: translateX(-50%) scale(0.9);
   opacity: 1;
   transition: opacity 0.3s ease;
-  pointer-events: none; /* Para que el hover funcione */
+  pointer-events: none;
 }
 
-/* Ocultar casco al pasar el cursor */
 .piloto-foto:hover .casco-stroll {
   opacity: 0;
 }
 
 .casco-lawson {
   position: absolute;
-  top: -85px; /* Ajustá si queda muy arriba/abajo */
+  top: -85px;
   left: 50%;
-  transform: translateX(-50%) scale(0.85); /* Tamaño */
+  transform: translateX(-50%) scale(0.85);
   opacity: 1;
   transition: opacity 0.3s ease;
-  pointer-events: none; /* Para que el hover funcione */
+  pointer-events: none;
 }
 
-/* Ocultar casco al pasar el cursor */
 .piloto-foto:hover .casco-lawson {
   opacity: 0;
 }
 
 .casco-ocon {
   position: absolute;
-  top: -93px; /* Ajustá si queda muy arriba/abajo */
+  top: -93px;
   left: 50%;
-  transform: translateX(-50%) scale(0.88); /* Tamaño */
+  transform: translateX(-50%) scale(0.88);
   opacity: 1;
   transition: opacity 0.3s ease;
-  pointer-events: none; /* Para que el hover funcione */
+  pointer-events: none;
 }
 
-/* Ocultar casco al pasar el cursor */
 .piloto-foto:hover .casco-ocon {
   opacity: 0;
 }
 
 .casco-tsunoda {
   position: absolute;
-  top: -88px; /* Ajustá si queda muy arriba/abajo */
+  top: -88px;
   left: 50%;
-  transform: translateX(-50%) scale(0.82); /* Tamaño */
+  transform: translateX(-50%) scale(0.82);
   opacity: 1;
   transition: opacity 0.3s ease;
-  pointer-events: none; /* Para que el hover funcione */
+  pointer-events: none;
 }
 
-/* Ocultar casco al pasar el cursor */
 .piloto-foto:hover .casco-tsunoda {
   opacity: 0;
 }
 
 .casco-gasly {
   position: absolute;
-  top: -98px; /* Ajustá si queda muy arriba/abajo */
+  top: -98px;
   left: 51%;
-  transform: translateX(-50%) scale(0.82); /* Tamaño */
+  transform: translateX(-50%) scale(0.82);
   opacity: 1;
   transition: opacity 0.3s ease;
-  pointer-events: none; /* Para que el hover funcione */
+  pointer-events: none;
 }
 
-/* Ocultar casco al pasar el cursor */
 .piloto-foto:hover .casco-gasly {
   opacity: 0;
 }
 
 .casco-bortoleto {
   position: absolute;
-  top: -73px; /* Ajustá si queda muy arriba/abajo */
+  top: -73px;
   left: 50%;
-  transform: translateX(-50%) scale(0.95); /* Tamaño */
+  transform: translateX(-50%) scale(0.95);
   opacity: 1;
   transition: opacity 0.3s ease;
-  pointer-events: none; /* Para que el hover funcione */
+  pointer-events: none;
 }
 
-/* Ocultar casco al pasar el cursor */
 .piloto-foto:hover .casco-bortoleto {
   opacity: 0;
 }
 
 .casco-colapinto {
   position: absolute;
-  top: -69px; /* Ajustá si queda muy arriba/abajo */
+  top: -69px;
   left: 51%;
-  transform: translateX(-50%) scale(0.78); /* Tamaño */
+  transform: translateX(-50%) scale(0.78);
   opacity: 1;
   transition: opacity 0.3s ease;
-  pointer-events: none; /* Para que el hover funcione */
+  pointer-events: none;
 }
 
-/* Ocultar casco al pasar el cursor */
 .piloto-foto:hover .casco-colapinto {
   opacity: 0;
 }
@@ -1028,21 +986,18 @@ input[type=email] {
     border-radius: 12px;
   }
   /* ESCUDERIAS */
-  /* Ocultamos columnas de pilotos */
   .grid-item-piloto-1,
   .grid-item-piloto-2 {
     display: none !important;
   }
-  /* La grilla muestra 1 sola columna */
   .grid-escuderias {
     display: grid !important;
-    grid-template-columns: 1fr !important; /* solo una columna */
+    grid-template-columns: 1fr !important;
     grid-auto-rows: auto !important;
     gap: 2rem;
     width: 100%;
     padding: 0 1rem;
   }
-  /* Las cards del medio se expanden al ancho completo */
   .grid-info-auto {
     width: 100%;
     padding: 1.5rem 1rem;
@@ -1050,19 +1005,16 @@ input[type=email] {
     text-align: center;
     border: 2px solid rgb(37, 35, 35);
   }
-  /* Título centrado, más grande en mobile */
   .grid-info-auto h2 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
   }
-  /* Auto más grande y responsivo */
   .grid-info-auto .car-img {
     width: 90%;
     max-width: 300px;
     margin: 1rem auto;
     display: block;
   }
-  /* Texto más legible */
   .grid-info-auto p {
     font-size: 1rem;
     line-height: 1.5;
@@ -1101,44 +1053,37 @@ input[type=email] {
     font-size: 16px;
   }
   /*PILOTOS*/
-  /* Contenedor principal en columna */
   .pilotos-container {
     width: 100%;
     padding: 0 10px;
     gap: 25px;
   }
-  /* Cada piloto ahora se apila verticalmente */
   .piloto-row {
     flex-direction: column;
     align-items: center;
     gap: 15px;
   }
-  /* Imagen arriba, tamaño ajustado */
   .piloto-img {
     width: 98%;
     max-width: 100%;
-    height: 420px; /* Ajustable si querés más alto */
+    height: 420px;
     object-fit: cover;
     border-radius: 12px;
   }
-  /* Tarjeta a ancho completo */
   .info-card {
     width: 100%;
     height: 420px;
     border-radius: 12px;
-    min-height: auto; /* Permite que se adapte al contenido */
+    min-height: auto;
   }
-  /* Fondo dentro de la tarjeta */
   .bg-img {
-    filter: brightness(0.55); /* Mantiene el efecto oscuro */
+    filter: brightness(0.55);
   }
-  /* Título centrado y más pequeño */
   .info-content h2 {
     font-size: 26px;
     text-align: center;
     margin-bottom: 40px;
   }
-  /* Lista ajustada */
   .info-content ul {
     padding-top: 50px;
     font-size: 15px;
