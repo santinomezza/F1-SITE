@@ -91,3 +91,34 @@
   box-shadow: 0 0 20px rgba(250, 250, 250, 0.6);
   z-index: 2;
 }
+/* ===== ANIMACIÓN DE AUTO EN CELDA ===== */
+
+.car-container {
+    position: relative;
+    overflow: hidden; /* evita que el auto se salga de la celda */
+}
+
+/* Imagen del auto */
+.auto-animado {
+    width: 100%;
+    max-width: 350px; /* Ajustable */
+    position: relative;
+    transform: translateX(-120%); /* empieza fuera de la celda */
+    animation: auto-drive 1.5s ease-out forwards;
+}
+
+/* Animación */
+@keyframes auto-drive {
+    0% { transform: translateX(-120%); }
+    100% { transform: translateX(0); }
+}
+
+/* Reiniciar animación al pasar el mouse */
+.car-container:hover .auto-animado {
+    animation: none;
+    transform: translateX(-120%);
+}
+
+.car-container:hover .auto-animado {
+    animation: auto-drive 2.5s ease-out forwards;
+}

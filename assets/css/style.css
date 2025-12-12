@@ -370,6 +370,40 @@ form {
   z-index: 2;
 }
 
+/* ===== ANIMACIÓN DE AUTO EN CELDA ===== */
+.car-container {
+  position: relative;
+  overflow: hidden; /* evita que el auto se salga de la celda */
+}
+
+/* Imagen del auto */
+.auto-animado {
+  width: 100%;
+  max-width: 350px; /* Ajustable */
+  position: relative;
+  transform: translateX(-120%); /* empieza fuera de la celda */
+  animation: auto-drive 1.5s ease-out forwards;
+}
+
+/* Animación */
+@keyframes auto-drive {
+  0% {
+    transform: translateX(-120%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* Reiniciar animación al pasar el mouse */
+.car-container:hover .auto-animado {
+  animation: none;
+  transform: translateX(-120%);
+}
+
+.car-container:hover .auto-animado {
+  animation: auto-drive 2.5s ease-out forwards;
+}
+
 /*NEUMATICOS*/
 .container-neumaticos {
   display: flex;
@@ -467,7 +501,7 @@ form {
   margin-top: 40px;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 30px;
 }
 
 /* === FILA DE CADA PILOTO === */
@@ -481,7 +515,7 @@ form {
 
 /* === IMAGEN DEL PILOTO === */
 .piloto-img {
-  width: 450px;
+  width: 500px;
   height: 100%;
   object-fit: cover;
   border-radius: 15px;
@@ -495,12 +529,14 @@ form {
 
 /* === TARJETA DE INFORMACIÓN === */
 .info-card {
-  width: 500px;
+  width: 670px;
+  height: 670px;
   border-radius: 15px;
   position: relative;
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  padding-top: 30px;
 }
 
 /* Fondo detrás */
@@ -524,7 +560,7 @@ form {
 
 .info-content h2 {
   font-size: 34px;
-  margin-bottom: 15px;
+  margin-bottom: 95px;
 }
 
 .info-content ul {
@@ -540,6 +576,323 @@ form {
 .info-card:hover {
   transform: scale(1.02);
   transition: 0.3s ease;
+}
+
+/* Contenedor de foto + casco */
+.piloto-foto {
+  position: relative;
+  width: 670px;
+  height: 700px;
+}
+
+/* Foto del piloto */
+.piloto-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Casco encima */
+.casco-norris {
+  position: absolute;
+  top: -120px; /* Ajustá si queda muy arriba/abajo */
+  left: 50%;
+  transform: translateX(-50%) scale(0.85); /* Tamaño */
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* Para que el hover funcione */
+}
+
+/* Ocultar casco al pasar el cursor */
+.piloto-foto:hover .casco-norris {
+  opacity: 0;
+}
+
+/* Casco encima */
+.casco-piastri {
+  position: absolute;
+  top: -120px; /* Ajustá si queda muy arriba/abajo */
+  left: 49%;
+  transform: translateX(-50%) scale(0.85); /* Tamaño */
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* Para que el hover funcione */
+}
+
+/* Ocultar casco al pasar el cursor */
+.piloto-foto:hover .casco-piastri {
+  opacity: 0;
+}
+
+/* Casco encima */
+.casco-max {
+  position: absolute;
+  top: -100px; /* Ajustá si queda muy arriba/abajo */
+  left: 51%;
+  transform: translateX(-50%) scale(0.73); /* Tamaño */
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* Para que el hover funcione */
+}
+
+/* Ocultar casco al pasar el cursor */
+.piloto-foto:hover .casco-max {
+  opacity: 0;
+}
+
+.casco-russell {
+  position: absolute;
+  top: -103px; /* Ajustá si queda muy arriba/abajo */
+  left: 50%;
+  transform: translateX(-50%) scale(0.87); /* Tamaño */
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* Para que el hover funcione */
+}
+
+/* Ocultar casco al pasar el cursor */
+.piloto-foto:hover .casco-russell {
+  opacity: 0;
+}
+
+.casco-leclerc {
+  position: absolute;
+  top: -100px; /* Ajustá si queda muy arriba/abajo */
+  left: 50%;
+  transform: translateX(-50%) scale(0.76); /* Tamaño */
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* Para que el hover funcione */
+}
+
+/* Ocultar casco al pasar el cursor */
+.piloto-foto:hover .casco-leclerc {
+  opacity: 0;
+}
+
+.casco-hamilton {
+  position: absolute;
+  top: -95px; /* Ajustá si queda muy arriba/abajo */
+  left: 49%;
+  transform: translateX(-50%) scale(0.75); /* Tamaño */
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* Para que el hover funcione */
+}
+
+/* Ocultar casco al pasar el cursor */
+.piloto-foto:hover .casco-hamilton {
+  opacity: 0;
+}
+
+.casco-antonelli {
+  position: absolute;
+  top: -100px; /* Ajustá si queda muy arriba/abajo */
+  left: 50%;
+  transform: translateX(-50%) scale(0.77); /* Tamaño */
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* Para que el hover funcione */
+}
+
+/* Ocultar casco al pasar el cursor */
+.piloto-foto:hover .casco-antonelli {
+  opacity: 0;
+}
+
+.casco-albon {
+  position: absolute;
+  top: -110px; /* Ajustá si queda muy arriba/abajo */
+  left: 50%;
+  transform: translateX(-50%) scale(0.9); /* Tamaño */
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* Para que el hover funcione */
+}
+
+/* Ocultar casco al pasar el cursor */
+.piloto-foto:hover .casco-albon {
+  opacity: 0;
+}
+
+.casco-hulkenberg {
+  position: absolute;
+  top: -73px; /* Ajustá si queda muy arriba/abajo */
+  left: 50%;
+  transform: translateX(-50%) scale(0.85); /* Tamaño */
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* Para que el hover funcione */
+}
+
+/* Ocultar casco al pasar el cursor */
+.piloto-foto:hover .casco-hulkenberg {
+  opacity: 0;
+}
+
+.casco-hadjar {
+  position: absolute;
+  top: -70px; /* Ajustá si queda muy arriba/abajo */
+  left: 50%;
+  transform: translateX(-50%) scale(0.92); /* Tamaño */
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* Para que el hover funcione */
+}
+
+/* Ocultar casco al pasar el cursor */
+.piloto-foto:hover .casco-hadjar {
+  opacity: 0;
+}
+
+.casco-sainz {
+  position: absolute;
+  top: -105px; /* Ajustá si queda muy arriba/abajo */
+  left: 47%;
+  transform: translateX(-50%) scale(0.75); /* Tamaño */
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* Para que el hover funcione */
+}
+
+/* Ocultar casco al pasar el cursor */
+.piloto-foto:hover .casco-sainz {
+  opacity: 0;
+}
+
+.casco-alonso {
+  position: absolute;
+  top: -130px; /* Ajustá si queda muy arriba/abajo */
+  left: 51%;
+  transform: translateX(-50%) scale(0.78); /* Tamaño */
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* Para que el hover funcione */
+}
+
+/* Ocultar casco al pasar el cursor */
+.piloto-foto:hover .casco-alonso {
+  opacity: 0;
+}
+
+.casco-baerman {
+  position: absolute;
+  top: -117px; /* Ajustá si queda muy arriba/abajo */
+  left: 52%;
+  transform: translateX(-50%) scale(0.9); /* Tamaño */
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* Para que el hover funcione */
+}
+
+/* Ocultar casco al pasar el cursor */
+.piloto-foto:hover .casco-baerman {
+  opacity: 0;
+}
+
+.casco-stroll {
+  position: absolute;
+  top: -125px; /* Ajustá si queda muy arriba/abajo */
+  left: 50%;
+  transform: translateX(-50%) scale(0.9); /* Tamaño */
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* Para que el hover funcione */
+}
+
+/* Ocultar casco al pasar el cursor */
+.piloto-foto:hover .casco-stroll {
+  opacity: 0;
+}
+
+.casco-lawson {
+  position: absolute;
+  top: -85px; /* Ajustá si queda muy arriba/abajo */
+  left: 50%;
+  transform: translateX(-50%) scale(0.85); /* Tamaño */
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* Para que el hover funcione */
+}
+
+/* Ocultar casco al pasar el cursor */
+.piloto-foto:hover .casco-lawson {
+  opacity: 0;
+}
+
+.casco-ocon {
+  position: absolute;
+  top: -93px; /* Ajustá si queda muy arriba/abajo */
+  left: 50%;
+  transform: translateX(-50%) scale(0.88); /* Tamaño */
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* Para que el hover funcione */
+}
+
+/* Ocultar casco al pasar el cursor */
+.piloto-foto:hover .casco-ocon {
+  opacity: 0;
+}
+
+.casco-tsunoda {
+  position: absolute;
+  top: -88px; /* Ajustá si queda muy arriba/abajo */
+  left: 50%;
+  transform: translateX(-50%) scale(0.82); /* Tamaño */
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* Para que el hover funcione */
+}
+
+/* Ocultar casco al pasar el cursor */
+.piloto-foto:hover .casco-tsunoda {
+  opacity: 0;
+}
+
+.casco-gasly {
+  position: absolute;
+  top: -98px; /* Ajustá si queda muy arriba/abajo */
+  left: 51%;
+  transform: translateX(-50%) scale(0.82); /* Tamaño */
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* Para que el hover funcione */
+}
+
+/* Ocultar casco al pasar el cursor */
+.piloto-foto:hover .casco-gasly {
+  opacity: 0;
+}
+
+.casco-bortoleto {
+  position: absolute;
+  top: -73px; /* Ajustá si queda muy arriba/abajo */
+  left: 50%;
+  transform: translateX(-50%) scale(0.95); /* Tamaño */
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* Para que el hover funcione */
+}
+
+/* Ocultar casco al pasar el cursor */
+.piloto-foto:hover .casco-bortoleto {
+  opacity: 0;
+}
+
+.casco-colapinto {
+  position: absolute;
+  top: -69px; /* Ajustá si queda muy arriba/abajo */
+  left: 51%;
+  transform: translateX(-50%) scale(0.78); /* Tamaño */
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* Para que el hover funcione */
+}
+
+/* Ocultar casco al pasar el cursor */
+.piloto-foto:hover .casco-colapinto {
+  opacity: 0;
 }
 
 h1 {
